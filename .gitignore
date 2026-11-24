@@ -6,7 +6,7 @@
 /data/dataPostgreSQL/
 
 # Ignorar el filestore de Odoo (adjuntos, imágenes, etc.)
-/data/odoo/filestore/
+#/data/odoo/filestore/
 
 # Ignorar las sesiones de Odoo
 /data/odoo/sessions/
