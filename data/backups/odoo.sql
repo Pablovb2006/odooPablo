@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict 2g3FLYzpfqTBp7heZIQVdJ6bX1nHX8xJ9aTkBK02SYOigCDbCCgpCha6JQll6mG
+\restrict 0e2FqdNsKRz6HagBO0PfQzYEtHKZZKS47SPwWiM1c0SNDDoPa6JEL4ix6mukcd3
 
 -- Dumped from database version 15.19 (Debian 15.19-1.pgdg13+2)
 -- Dumped by pg_dump version 15.19 (Debian 15.19-1.pgdg13+2)
@@ -77001,6 +77001,10 @@ COPY public.bus_bus (id, create_uid, write_uid, channel, message, create_date, w
 155	1	1	["odoo","res.partner",3,"presence"]	{"type":"bus.bus/im_status_updated","payload":{"presence_status":"offline","im_status":"offline","partner_id":3}}	2026-11-25 09:00:57.28834	2026-11-25 09:00:57.28834
 156	2	2	["odoo","res.partner",3,"presence"]	{"type":"bus.bus/im_status_updated","payload":{"presence_status":"online","im_status":"online","partner_id":3}}	2026-11-25 09:03:58.539368	2026-11-25 09:03:58.539368
 157	2	2	["odoo","res.partner",3,"presence"]	{"type":"bus.bus/im_status_updated","payload":{"presence_status":"offline","im_status":"offline","partner_id":3}}	2026-11-25 09:45:51.838932	2026-11-25 09:45:51.838932
+158	2	2	["odoo","res.partner",3,"presence"]	{"type":"bus.bus/im_status_updated","payload":{"presence_status":"online","im_status":"online","partner_id":3}}	2026-11-25 10:35:14.092414	2026-11-25 10:35:14.092414
+159	2	2	["odoo","res.partner",3]	{"type":"bus.bus/im_status_updated","payload":{"presence_status":"online","im_status":"online","partner_id":3}}	2026-11-25 10:35:15.211876	2026-11-25 10:35:15.211876
+160	2	2	["odoo","res.partner",3,"presence"]	{"type":"bus.bus/im_status_updated","payload":{"presence_status":"offline","im_status":"offline","partner_id":3}}	2026-11-25 10:51:33.786083	2026-11-25 10:51:33.786083
+161	2	2	["odoo","res.partner",3,"presence"]	{"type":"bus.bus/im_status_updated","payload":{"presence_status":"online","im_status":"online","partner_id":3}}	2026-11-25 10:51:34.997812	2026-11-25 10:51:34.997812
 \.
 
 
@@ -80147,29 +80151,29 @@ COPY public.ir_cron (id, ir_actions_server_id, user_id, interval_number, priorit
 25	433	1	2	5	0	1	1	PEPPOL: webhook keep alive	weeks	t	2026-12-01 08:42:48	2026-11-17 08:44:02	\N	2026-11-17 08:42:48.461021	2026-11-17 08:42:48.461021
 24	432	1	1	5	0	1	1	PEPPOL: update participant status	weeks	t	2026-12-01 08:42:48	2026-11-24 08:43:01	\N	2026-11-17 08:42:48.461021	2026-11-17 08:42:48.461021
 4	127	1	1	1000	0	1	1	Publisher: Update Notification	weeks	t	2026-12-01 07:59:47	2026-11-24 08:00:14	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
-14	199	1	1	5	0	1	1	Digest Emails	days	t	2026-11-25 10:00:00	2026-11-24 17:55:50	\N	2026-11-17 08:00:00.461227	2026-11-17 08:00:00.461227
 31	579	1	1	5	0	1	1	Website Visitor : clean inactive visitors	days	t	2026-11-25 12:35:57	2026-11-24 17:55:50	\N	2026-11-20 12:35:53.984544	2026-11-20 12:35:53.984544
-33	630	1	1	5	0	1	1	Product: send email regarding products availability	hours	t	2026-11-25 10:39:52	2026-11-25 09:40:00	\N	2026-11-20 12:39:52.068409	2026-11-20 12:39:52.068409
+8	131	1	1	5	0	1	1	Notification: Notify scheduled messages	hours	t	2026-11-25 11:59:47	2026-11-25 10:59:59	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
 7	130	1	1	5	0	1	1	Mail: Post scheduled messages	days	t	2026-11-26 07:59:47	2026-11-25 09:00:56	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
-8	131	1	1	5	0	1	1	Notification: Notify scheduled messages	hours	t	2026-11-25 09:59:47	2026-11-25 09:00:56	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
+3	126	1	1	6	0	1	1	Mail: Email Queue Manager	hours	t	2026-11-25 11:59:47	2026-11-25 10:59:59	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
 9	132	1	1	5	0	1	1	Mail: send web push notification	days	t	2026-11-26 07:59:47	2026-11-25 09:00:56	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
-3	126	1	1	6	0	1	1	Mail: Email Queue Manager	hours	t	2026-11-25 09:59:47	2026-11-25 09:00:57	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
 10	133	1	1	5	0	1	1	Discuss: channel member unmute	days	t	2026-11-26 07:59:47	2026-11-25 09:00:57	\N	2026-11-17 07:59:44.605682	2026-11-17 07:59:44.605682
-16	312	1	10	5	0	1	2	Payment: Post-process transactions	minutes	t	2026-11-25 09:52:27	2026-11-25 09:42:41	\N	2026-11-17 08:42:24.791017	2026-11-24 08:51:13.383478
 12	188	1	24	5	0	1	1	SMS: SMS Queue Manager	hours	t	2026-11-26 07:59:59	2026-11-25 09:00:57	\N	2026-11-17 07:59:58.547358	2026-11-17 07:59:58.547358
 11	147	1	1	6	0	1	1	Users: Notify About Unregistered Users	days	t	2026-11-26 07:59:48	2026-11-25 09:00:57	\N	2026-11-17 07:59:48.688394	2026-11-17 07:59:48.688394
 13	197	1	24	5	0	1	1	Snailmail: process letters queue	hours	t	2026-11-26 08:00:00	2026-11-25 09:00:57	\N	2026-11-17 07:59:59.959664	2026-11-17 07:59:59.959664
+16	312	1	10	5	0	1	2	Payment: Post-process transactions	minutes	t	2026-11-25 11:22:27	2026-11-25 11:12:37	\N	2026-11-17 08:42:24.791017	2026-11-24 08:51:13.383478
 15	202	1	1	5	0	1	1	Procurement: run scheduler	days	t	2026-11-26 08:00:03	2026-11-25 09:00:57	\N	2026-11-17 08:00:00.870439	2026-11-17 08:00:00.870439
 2	36	1	1	8	0	1	1	Base: Portal Users Deletion	days	t	2026-11-26 07:20:28	2026-11-25 09:00:57	\N	2026-11-17 07:20:19.004131	2026-11-17 07:59:44.605682
 17	392	1	1	5	0	1	1	Account: Post draft entries with auto_post enabled and accounting date up to today	days	t	2026-11-26 02:00:33	2026-11-25 09:00:57	\N	2026-11-17 08:42:28.455657	2026-11-17 08:42:28.455657
 18	393	1	1	5	0	1	1	Send invoices automatically	days	t	2026-11-26 08:42:33	2026-11-25 09:00:57	\N	2026-11-17 08:42:28.455657	2026-11-17 08:42:28.455657
 1	35	1	1	3	0	1	1	Base: Auto-vacuum internal data	days	t	2026-11-26 07:20:28	2026-11-25 09:00:55	\N	2026-11-17 07:20:19.004131	2026-11-17 07:59:44.605682
+14	199	1	1	5	0	1	1	Digest Emails	days	t	2026-11-26 10:00:00	2026-11-25 10:00:00	\N	2026-11-17 08:00:00.461227	2026-11-17 08:00:00.461227
+33	630	1	1	5	0	1	1	Product: send email regarding products availability	hours	t	2026-11-25 11:39:52	2026-11-25 10:39:58	\N	2026-11-20 12:39:52.068409	2026-11-20 12:39:52.068409
 20	406	1	1	5	0	1	1	Purchase reminder	days	t	2026-11-26 08:42:44	2026-11-25 09:00:57	\N	2026-11-17 08:42:43.790348	2026-11-17 08:42:43.790348
 21	424	1	1	5	0	1	1	Stock Account: Inventory Valuation Closing	days	t	2026-11-26 08:42:46	2026-11-25 09:00:57	\N	2026-11-17 08:42:46.491103	2026-11-17 08:42:46.491103
 22	430	1	4	5	0	1	1	PEPPOL: retrieve new documents	hours	t	2026-11-25 12:42:48	2026-11-25 09:00:57	\N	2026-11-17 08:42:48.461021	2026-11-17 08:42:48.461021
 23	431	1	1	5	0	1	1	PEPPOL: update message status	days	t	2026-11-26 08:42:48	2026-11-25 09:00:57	\N	2026-11-17 08:42:48.461021	2026-11-17 08:42:48.461021
 19	404	1	1	5	0	1	1	Base VAT: Sync updates from IAP VIES	days	t	2026-11-26 08:42:40	2026-11-25 09:00:57	\N	2026-11-17 08:42:40.421114	2026-11-17 08:42:40.421114
-32	612	1	1	5	0	1	1	eCommerce: send email to customers about their abandoned cart	hours	t	2026-11-25 10:39:47	2026-11-25 09:40:00	\N	2026-11-20 12:39:46.036801	2026-11-20 12:39:46.036801
+32	612	1	1	5	0	1	1	eCommerce: send email to customers about their abandoned cart	hours	t	2026-11-25 11:39:47	2026-11-25 10:39:58	\N	2026-11-20 12:39:46.036801	2026-11-20 12:39:46.036801
 \.
 
 
@@ -80331,13 +80335,27 @@ COPY public.ir_cron_progress (id, cron_id, remaining, done, timed_out_counter, c
 193	33	0	0	0	1	1	\N	2026-11-25 09:40:00.400393	2026-11-25 09:40:00.41102
 194	16	0	0	0	1	1	\N	2026-11-25 09:42:41.95327	2026-11-25 09:42:41.974914
 171	10	0	0	0	1	1	\N	2026-11-25 09:00:57.016831	2026-11-25 09:00:57.025119
+195	16	0	0	0	1	1	\N	2026-11-25 09:52:52.754003	2026-11-25 09:52:52.773914
+196	8	0	0	0	1	1	\N	2026-11-25 10:00:00.29812	2026-11-25 10:00:00.318795
 172	12	0	0	0	1	1	\N	2026-11-25 09:00:57.032665	2026-11-25 09:00:57.04158
 173	13	0	0	0	1	1	\N	2026-11-25 09:00:57.048355	2026-11-25 09:00:57.056316
+197	14	0	0	0	1	1	\N	2026-11-25 10:00:00.337385	2026-11-25 10:00:00.344923
+198	3	0	0	0	1	1	\N	2026-11-25 10:00:00.351263	2026-11-25 10:00:00.35955
+229	16	0	0	0	1	1	\N	2026-11-25 10:35:57.956108	2026-11-25 10:35:57.971471
+230	32	0	0	0	1	1	\N	2026-11-25 10:39:58.283246	2026-11-25 10:39:58.306069
 174	15	0	4	0	1	1	\N	2026-11-25 09:00:57.063204	2026-11-25 09:00:57.15831
+231	33	0	0	0	1	1	\N	2026-11-25 10:39:58.334136	2026-11-25 10:39:58.344506
+233	16	0	0	0	1	1	\N	2026-11-25 10:52:59.177885	2026-11-25 10:52:59.199317
+234	8	0	0	0	1	1	\N	2026-11-25 10:59:59.620386	2026-11-25 10:59:59.641849
+235	3	0	0	0	1	1	\N	2026-11-25 10:59:59.660532	2026-11-25 10:59:59.671574
+236	16	0	0	0	1	1	\N	2026-11-25 11:02:59.894798	2026-11-25 11:02:59.916382
+237	16	0	0	0	1	1	\N	2026-11-25 11:12:37.380088	2026-11-25 11:12:37.392945
 175	16	0	0	0	1	1	\N	2026-11-25 09:00:57.165319	2026-11-25 09:00:57.173933
+199	16	0	0	0	1	1	\N	2026-11-25 10:18:12.674254	2026-11-25 10:18:12.698182
 176	17	0	0	0	1	1	\N	2026-11-25 09:00:57.181636	2026-11-25 09:00:57.210347
 177	18	0	0	0	1	1	\N	2026-11-25 09:00:57.218716	2026-11-25 09:00:57.226977
 178	19	0	0	0	1	1	\N	2026-11-25 09:00:57.234032	2026-11-25 09:00:57.602345
+232	16	0	0	0	1	1	\N	2026-11-25 10:42:58.538011	2026-11-25 10:42:58.562883
 167	1	0	0	0	1	1	\N	2026-11-25 09:00:56.699116	2026-11-25 09:00:57.502832
 179	20	0	0	0	1	1	\N	2026-11-25 09:00:57.519908	2026-11-25 09:00:57.53511
 180	21	0	0	0	1	1	\N	2026-11-25 09:00:57.542114	2026-11-25 09:00:57.549605
@@ -136161,12 +136179,6 @@ COPY public.mail_followers (id, res_id, partner_id, res_model) FROM stdin;
 153	130	3	product.product
 154	131	3	product.product
 155	132	3	product.product
-157	134	3	product.product
-158	135	3	product.product
-159	136	3	product.product
-160	137	3	product.product
-161	138	3	product.product
-162	139	3	product.product
 165	142	3	product.product
 166	143	3	product.product
 167	144	3	product.product
@@ -136177,6 +136189,63 @@ COPY public.mail_followers (id, res_id, partner_id, res_model) FROM stdin;
 174	151	3	product.product
 175	152	3	product.product
 176	153	3	product.product
+177	154	3	product.product
+178	155	3	product.product
+179	156	3	product.product
+180	157	3	product.product
+181	158	3	product.product
+182	159	3	product.product
+183	160	3	product.product
+184	161	3	product.product
+185	162	3	product.product
+186	163	3	product.product
+187	164	3	product.product
+188	165	3	product.product
+189	166	3	product.product
+190	167	3	product.product
+191	168	3	product.product
+192	169	3	product.product
+193	170	3	product.product
+194	171	3	product.product
+197	174	3	product.product
+198	175	3	product.product
+199	176	3	product.product
+200	177	3	product.product
+201	178	3	product.product
+202	179	3	product.product
+206	183	3	product.product
+207	184	3	product.product
+208	185	3	product.product
+209	186	3	product.product
+210	187	3	product.product
+211	188	3	product.product
+212	189	3	product.product
+213	190	3	product.product
+214	191	3	product.product
+217	194	3	product.product
+218	195	3	product.product
+219	196	3	product.product
+220	197	3	product.product
+221	198	3	product.product
+222	199	3	product.product
+223	84	3	product.template
+224	200	3	product.product
+225	85	3	product.template
+226	201	3	product.product
+227	86	3	product.template
+228	202	3	product.product
+229	87	3	product.template
+230	203	3	product.product
+231	88	3	product.template
+232	204	3	product.product
+233	89	3	product.template
+234	205	3	product.product
+235	90	3	product.template
+236	206	3	product.product
+237	91	3	product.template
+238	207	3	product.product
+239	92	3	product.template
+240	208	3	product.product
 \.
 
 
@@ -136325,12 +136394,6 @@ COPY public.mail_followers_mail_message_subtype_rel (mail_followers_id, mail_mes
 153	1
 154	1
 155	1
-157	1
-158	1
-159	1
-160	1
-161	1
-162	1
 165	1
 166	1
 167	1
@@ -136341,6 +136404,63 @@ COPY public.mail_followers_mail_message_subtype_rel (mail_followers_id, mail_mes
 174	1
 175	1
 176	1
+177	1
+178	1
+179	1
+180	1
+181	1
+182	1
+183	1
+184	1
+185	1
+186	1
+187	1
+188	1
+189	1
+190	1
+191	1
+192	1
+193	1
+194	1
+197	1
+198	1
+199	1
+200	1
+201	1
+202	1
+206	1
+207	1
+208	1
+209	1
+210	1
+211	1
+212	1
+213	1
+214	1
+217	1
+218	1
+219	1
+220	1
+221	1
+222	1
+223	1
+224	1
+225	1
+226	1
+227	1
+228	1
+229	1
+230	1
+231	1
+232	1
+233	1
+234	1
+235	1
+236	1
+237	1
+238	1
+239	1
+240	1
 \.
 
 
@@ -137403,12 +137523,6 @@ COPY public.mail_message (id, parent_id, res_id, record_alias_domain_id, record_
 1056	\N	132	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<216733816103708.1795599370.131554841995239-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:36:10	\N	2026-11-25 09:36:10.059005	2026-11-25 09:36:10.059005
 1057	\N	76	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<441608058563861.1795599392.787183284759521-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N		\N	t	\N	f	2026-11-25 09:36:32	\N	2026-11-25 09:36:32.620872	2026-11-25 09:36:32.620872
 1059	\N	77	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<323464323519412.1795599549.979590177536011-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N		\N	t	\N	f	2026-11-25 09:39:09	\N	2026-11-25 09:39:09.704904	2026-11-25 09:39:09.704904
-1060	\N	134	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<543611584483929.1795599594.812143325805664-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:39:54	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-1061	\N	135	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<543611584483929.1795599594.812143325805664-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:39:54	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-1062	\N	136	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<543611584483929.1795599594.812143325805664-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:39:54	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-1063	\N	137	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<543611584483929.1795599594.812143325805664-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:39:54	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-1064	\N	138	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<543611584483929.1795599594.812143325805664-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:39:54	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-1065	\N	139	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<543611584483929.1795599594.812143325805664-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:39:54	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
 1068	\N	142	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<210842322356162.1795599827.298738956451416-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:43:47	\N	2026-11-25 09:43:47.222474	2026-11-25 09:43:47.222474
 1069	\N	143	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<210842322356162.1795599827.298738956451416-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:43:47	\N	2026-11-25 09:43:47.222474	2026-11-25 09:43:47.222474
 1070	\N	144	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<210842322356162.1795599827.298738956451416-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:43:47	\N	2026-11-25 09:43:47.222474	2026-11-25 09:43:47.222474
@@ -137421,6 +137535,65 @@ COPY public.mail_message (id, parent_id, res_id, record_alias_domain_id, record_
 1079	\N	152	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<978054616146782.1795599928.376628637313843-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:45:28	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357
 1080	\N	153	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<978054616146782.1795599928.376628637313843-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 09:45:28	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357
 1081	\N	79	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<995180185063774.1795599928.401605844497681-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N		\N	t	\N	f	2026-11-25 09:45:28	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357
+1082	\N	154	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1083	\N	155	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1084	\N	156	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1085	\N	157	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1086	\N	158	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1087	\N	159	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1088	\N	160	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1089	\N	161	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1090	\N	162	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<726685729799917.1795603046.931479454040527-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1091	\N	80	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<589251812708542.1795603046.980820178985596-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N		\N	t	\N	f	2026-11-25 10:37:26	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+1092	\N	163	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1093	\N	164	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1094	\N	165	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1095	\N	166	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1096	\N	167	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1097	\N	168	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1098	\N	169	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1099	\N	170	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1100	\N	171	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<355799657398093.1795603251.427302837371826-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:40:51	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+1103	\N	174	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<547676427446809.1795603378.107053995132446-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:42:58	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+1104	\N	175	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<547676427446809.1795603378.107053995132446-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:42:58	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+1105	\N	176	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<547676427446809.1795603378.107053995132446-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:42:58	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+1106	\N	177	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<547676427446809.1795603378.107053995132446-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:42:58	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+1107	\N	178	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<547676427446809.1795603378.107053995132446-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:42:58	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+1108	\N	179	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<547676427446809.1795603378.107053995132446-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:42:58	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+1112	\N	183	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<006926330545237.1795603575.913873672485352-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:15	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+1113	\N	184	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<006926330545237.1795603575.913873672485352-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:15	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+1114	\N	185	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<006926330545237.1795603575.913873672485352-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:15	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+1115	\N	186	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<006926330545237.1795603575.913873672485352-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:15	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+1116	\N	187	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<006926330545237.1795603575.913873672485352-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:15	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+1117	\N	188	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<006926330545237.1795603575.913873672485352-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:15	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+1118	\N	189	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<579763409843263.1795603619.153482913970947-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:59	\N	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+1119	\N	190	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<579763409843263.1795603619.153482913970947-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:59	\N	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+1120	\N	191	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<579763409843263.1795603619.153482913970947-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:46:59	\N	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+1123	\N	194	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<280402935158448.1795603918.873942613601685-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:51:58	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+1124	\N	195	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<280402935158448.1795603918.873942613601685-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:51:58	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+1125	\N	196	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<280402935158448.1795603918.873942613601685-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:51:58	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+1126	\N	197	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<280402935158448.1795603918.873942613601685-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:51:58	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+1127	\N	198	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<280402935158448.1795603918.873942613601685-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:51:58	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+1128	\N	199	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<280402935158448.1795603918.873942613601685-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 10:51:58	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+1129	\N	84	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<171757309519158.1795604560.350496053695679-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:02:40	\N	2026-11-25 11:02:40.303678	2026-11-25 11:02:40.303678
+1130	\N	200	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<981726731137420.1795604560.369405031204224-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:02:40	\N	2026-11-25 11:02:40.303678	2026-11-25 11:02:40.303678
+1131	\N	85	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<806070615413921.1795604679.610863924026489-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:04:39	\N	2026-11-25 11:04:39.560042	2026-11-25 11:04:39.560042
+1132	\N	201	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<149142736726004.1795604679.627758264541626-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:04:39	\N	2026-11-25 11:04:39.560042	2026-11-25 11:04:39.560042
+1133	\N	86	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<925444219488499.1795604764.158351898193359-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:06:04	\N	2026-11-25 11:06:04.110168	2026-11-25 11:06:04.110168
+1134	\N	202	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<579030219185245.1795604764.176153659820557-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:06:04	\N	2026-11-25 11:06:04.110168	2026-11-25 11:06:04.110168
+1135	\N	87	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<945260741534346.1795604851.065372943878174-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:07:31	\N	2026-11-25 11:07:31.029186	2026-11-25 11:07:31.029186
+1136	\N	203	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<516431032810092.1795604851.082822322845459-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:07:31	\N	2026-11-25 11:07:31.029186	2026-11-25 11:07:31.029186
+1137	\N	88	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<089590668012161.1795604972.536144733428955-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:09:32	\N	2026-11-25 11:09:32.489502	2026-11-25 11:09:32.489502
+1138	\N	204	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<390466505191606.1795604972.555986642837524-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:09:32	\N	2026-11-25 11:09:32.489502	2026-11-25 11:09:32.489502
+1139	\N	89	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<638981238946043.1795604998.817242622375488-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:09:58	\N	2026-11-25 11:09:58.775461	2026-11-25 11:09:58.775461
+1140	\N	205	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<259048064178505.1795604998.862312555313110-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:09:58	\N	2026-11-25 11:09:58.775461	2026-11-25 11:09:58.775461
+1141	\N	89	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<014676443124527.1795605072.687838554382324-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N		\N	t	\N	f	2026-11-25 11:11:12	\N	2026-11-25 11:11:12.524655	2026-11-25 11:11:12.524655
+1142	\N	90	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<736016818788854.1795605103.199903011322021-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:11:43	\N	2026-11-25 11:11:43.162528	2026-11-25 11:11:43.162528
+1143	\N	206	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<988181717192054.1795605103.216797351837158-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:11:43	\N	2026-11-25 11:11:43.162528	2026-11-25 11:11:43.162528
+1144	\N	91	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<807133841901243.1795605188.850233078002930-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:13:08	\N	2026-11-25 11:13:08.814176	2026-11-25 11:13:08.814176
+1145	\N	207	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<102352002932171.1795605188.866667509078979-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:13:08	\N	2026-11-25 11:13:08.814176	2026-11-25 11:13:08.814176
+1146	\N	92	\N	\N	2	\N	3	\N	\N	2	2	\N	product.template	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<537567320236160.1795605247.603232622146606-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Producto creado</p>	\N	t	\N	f	2026-11-25 11:14:07	\N	2026-11-25 11:14:07.562638	2026-11-25 11:14:07.562638
+1147	\N	208	\N	\N	2	\N	3	\N	\N	2	2	\N	product.product	notification	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	\N	<479333477959794.1795605247.620351552963257-openerp-message-notify@31d32b50ff57>	"Pablo admin" <pabvizbri@alu.edu.gva.es>	\N	<p>Variante de producto creado</p>	\N	t	\N	f	2026-11-25 11:14:07	\N	2026-11-25 11:14:07.562638	2026-11-25 11:14:07.562638
 \.
 
 
@@ -137556,7 +137729,7 @@ COPY public.mail_notification (id, author_id, mail_message_id, mail_mail_id, res
 --
 
 COPY public.mail_presence (id, user_id, guest_id, status, last_poll, last_presence) FROM stdin;
-3	2	\N	offline	2026-11-25 09:11:36	2026-11-25 09:11:35.999
+3	2	\N	online	2026-11-25 11:02:38	2026-11-25 11:02:37.999
 \.
 
 
@@ -138017,6 +138190,8 @@ COPY public.mail_tracking_value (id, field_id, old_value_integer, new_value_inte
 347	3293	\N	\N	\N	1059	2	2	\N	\N	\N	\N	\N	\N	\N	2026-11-25 09:39:09.704904	2026-11-25 09:39:09.704904	1699	1599
 348	3293	\N	\N	\N	1074	2	2	\N	\N	\N	\N	\N	\N	\N	2026-11-25 09:43:56.556324	2026-11-25 09:43:56.556324	2899	2499
 349	3293	\N	\N	\N	1081	2	2	\N	\N	\N	\N	\N	\N	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357	1899	1699
+350	3293	\N	\N	\N	1091	2	2	\N	\N	\N	\N	\N	\N	\N	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454	4799	4399
+351	3293	\N	\N	\N	1141	2	2	\N	\N	\N	\N	\N	\N	\N	2026-11-25 11:11:12.524655	2026-11-25 11:11:12.524655	1	34.9
 \.
 
 
@@ -138357,6 +138532,25 @@ COPY public.orm_signaling_default (id, date) FROM stdin;
 110	2026-11-25 09:43:47.63584
 111	2026-11-25 09:45:00.619021
 112	2026-11-25 09:45:28.660796
+113	2026-11-25 10:37:27.210719
+114	2026-11-25 10:39:33.665651
+115	2026-11-25 10:40:51.689564
+116	2026-11-25 10:42:28.923694
+117	2026-11-25 10:42:58.46076
+118	2026-11-25 10:44:34.015973
+119	2026-11-25 10:46:16.213899
+120	2026-11-25 10:46:59.388641
+121	2026-11-25 10:47:23.772423
+122	2026-11-25 10:51:59.186527
+123	2026-11-25 11:02:40.543699
+124	2026-11-25 11:04:39.796821
+125	2026-11-25 11:06:04.334002
+126	2026-11-25 11:07:31.245764
+127	2026-11-25 11:09:32.731919
+128	2026-11-25 11:09:59.038235
+129	2026-11-25 11:11:43.385026
+130	2026-11-25 11:13:09.028761
+131	2026-11-25 11:14:07.767634
 \.
 
 
@@ -140416,10 +140610,11 @@ COPY public.product_attribute (id, sequence, create_uid, write_uid, create_varia
 9	110	1	1	no_variant	multi	{"en_US": "Options", "es_ES": "Opciones"}	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	visible	hidden	\N	\N
 10	120	1	1	no_variant	radio	{"en_US": "Customization", "es_ES": "Personalización"}	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	visible	hidden	\N	\N
 11	20	1	1	no_variant	pills	{"en_US": "Shoes size", "es_ES": "Talla de zapatos"}	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	visible	hidden	\N	\N
-12	20	2	2	always	radio	{"en_US": "Batería", "es_ES": "Batería"}	t	2026-11-17 08:25:37.961971	2026-11-17 08:25:37.961971	visible	hidden	\N	\N
-13	20	2	2	always	radio	{"en_US": "Material", "es_ES": "Material"}	t	2026-11-24 19:04:04.872101	2026-11-24 19:04:04.872101	visible	hidden	\N	\N
-14	20	2	2	always	radio	{"en_US": "Material del cuadro", "es_ES": "Material del cuadro"}	t	2026-11-25 09:33:33.406832	2026-11-25 09:33:33.406832	visible	hidden	\N	\N
-3	30	1	2	always	color	{"en_US": "Color", "es_ES": "Color"}	t	2026-11-17 07:59:51.022341	2026-11-25 09:40:55.417787	visible	hidden	\N	\N
+14	20	2	2	always	radio	{"en_US": "Material del cuadro", "es_ES": "Material del cuadro"}	t	2026-11-25 09:33:33.406832	2026-11-25 10:40:35.587172	visible	hidden	\N	\N
+12	20	2	2	always	radio	{"en_US": "Batería", "es_ES": "Batería"}	t	2026-11-17 08:25:37.961971	2026-11-25 10:43:31.84909	visible	hidden	\N	\N
+3	30	1	2	always	color	{"en_US": "Color", "es_ES": "Color"}	t	2026-11-17 07:59:51.022341	2026-11-25 10:45:11.89612	visible	hidden	\N	\N
+15	20	2	2	always	radio	{"en_US": "Bateri", "es_ES": "Bateri"}	t	2026-11-25 10:45:52.01317	2026-11-25 10:45:52.01317	visible	hidden	\N	\N
+13	20	2	2	always	radio	{"en_US": "Material", "es_ES": "Material"}	f	2026-11-24 19:04:04.872101	2026-11-25 10:53:36.781845	visible	hidden	\N	\N
 \.
 
 
@@ -140455,7 +140650,6 @@ COPY public.product_attribute_product_template_rel (product_attribute_id, produc
 7	27
 3	36
 12	36
-13	77
 3	74
 14	74
 3	76
@@ -140465,6 +140659,18 @@ COPY public.product_attribute_product_template_rel (product_attribute_id, produc
 14	78
 3	79
 14	79
+12	80
+3	80
+14	80
+3	81
+14	81
+12	81
+3	82
+14	82
+12	82
+3	83
+14	83
+14	77
 \.
 
 
@@ -140473,8 +140679,6 @@ COPY public.product_attribute_product_template_rel (product_attribute_id, produc
 --
 
 COPY public.product_attribute_value (id, sequence, attribute_id, color, create_uid, write_uid, html_color, name, is_custom, active, create_date, write_date, default_extra_price) FROM stdin;
-102	\N	12	10	2	2	\N	{"en_US": "500Wh", "es_ES": "500Wh"}	\N	t	2026-11-17 08:25:45.680349	2026-11-17 08:25:45.680349	\N
-103	\N	12	9	2	2	\N	{"en_US": "750Wh", "es_ES": "750Wh"}	\N	t	2026-11-17 08:25:53.167209	2026-11-17 08:25:53.167209	\N
 70	\N	4	3	1	1	\N	{"en_US": "45"}	\N	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	\N
 71	\N	4	6	1	1	\N	{"en_US": "85"}	\N	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	\N
 72	\N	4	3	1	1	\N	{"en_US": "100"}	\N	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	\N
@@ -140539,6 +140743,8 @@ COPY public.product_attribute_value (id, sequence, attribute_id, color, create_u
 55	6	3	3	1	1	#E63946	{"en_US": "Red", "es_ES": "Rojo"}	\N	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	\N
 50	1	3	1	1	2	#FAFAFA	{"en_US": "White", "es_ES": "Blanco"}	\N	f	2026-11-17 07:59:51.022341	2026-11-25 09:32:59.342979	\N
 54	5	3	9	1	2	#EAE0D5	{"en_US": "Beige", "es_ES": "Beige"}	\N	t	2026-11-17 07:59:51.022341	2026-11-25 09:40:55.417787	50
+102	\N	12	10	2	2	\N	{"en_US": "500Wh", "es_ES": "500Wh"}	\N	t	2026-11-17 08:25:45.680349	2026-11-25 10:43:31.84909	150
+103	\N	12	9	2	2	\N	{"en_US": "750Wh", "es_ES": "750Wh"}	\N	t	2026-11-17 08:25:53.167209	2026-11-25 10:43:31.84909	200
 76	\N	5	9	1	1	\N	{"en_US": "Custom", "es_ES": "Personalizado"}	t	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	50
 77	\N	6	3	1	1	\N	{"en_US": "1 month", "es_ES": "1 mes"}	\N	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	\N
 78	\N	6	5	1	1	\N	{"en_US": "6 months", "es_ES": "6 meses"}	\N	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	\N
@@ -140564,10 +140770,6 @@ COPY public.product_attribute_value (id, sequence, attribute_id, color, create_u
 105	\N	13	9	2	2	\N	{"en_US": "Fibra de carbono", "es_ES": "Fibra de carbono"}	\N	t	2026-11-24 19:04:43.413561	2026-11-24 19:04:43.413561	\N
 108	\N	3	7	2	2	#191919	{"en_US": "Negro carbono", "es_ES": "Negro carbono"}	\N	t	2026-11-25 09:26:51.983385	2026-11-25 09:32:34.797323	\N
 109	\N	3	4	2	2	#b22222	{"en_US": "Rojo carmesí", "es_ES": "Rojo carmesí"}	\N	t	2026-11-25 09:27:09.125377	2026-11-25 09:32:34.797323	\N
-110	\N	14	4	2	2	\N	{"en_US": "Carbono Alto Módulo", "es_ES": "Carbono Alto Módulo"}	\N	t	2026-11-25 09:33:46.966524	2026-11-25 09:33:46.966524	\N
-111	\N	14	6	2	2	\N	{"en_US": "Carbono Estándar", "es_ES": "Carbono Estándar"}	\N	t	2026-11-25 09:33:54.11992	2026-11-25 09:33:54.11992	\N
-115	\N	14	6	2	2	\N	{"en_US": "Cuadro ultraligero", "es_ES": "Cuadro ultraligero"}	\N	t	2026-11-25 09:35:59.106725	2026-11-25 09:35:59.106725	\N
-116	\N	14	3	2	2	\N	{"en_US": "Carbono Reforzado", "es_ES": "Carbono Reforzado"}	\N	t	2026-11-25 09:36:08.39396	2026-11-25 09:36:08.39396	\N
 112	\N	3	5	2	2	#0047ab	{"en_US": "Azul Cobalto Brillo", "es_ES": "Azul Cobalto Brillo"}	\N	t	2026-11-25 09:35:17.521056	2026-11-25 09:38:10.151469	\N
 114	\N	3	1	2	2	#878681	{"en_US": "Gris titanio", "es_ES": "Gris titanio"}	f	t	2026-11-25 09:35:37.529943	2026-11-25 09:38:10.151469	\N
 117	\N	13	7	2	2	\N	{"en_US": "Acero Cromoly 4130", "es_ES": "Acero Cromoly 4130"}	\N	t	2026-11-25 09:39:07.206416	2026-11-25 09:39:07.206416	\N
@@ -140575,9 +140777,21 @@ COPY public.product_attribute_value (id, sequence, attribute_id, color, create_u
 106	\N	3	8	2	2	#eae6ca	{"en_US": "Blanco perla", "es_ES": "Blanco perla"}	\N	t	2026-11-25 09:26:27.453859	2026-11-25 09:40:26.623795	100
 113	\N	3	8	2	2	#800020	{"en_US": "Rojo burdeos", "es_ES": "Rojo burdeos"}	\N	t	2026-11-25 09:35:31.491112	2026-11-25 09:40:40.890699	50
 107	\N	3	3	2	2	#0000ff	{"en_US": "Azul eléctrico", "es_ES": "Azul eléctrico"}	\N	t	2026-11-25 09:26:39.261599	2026-11-25 09:40:48.13901	50
-119	\N	14	5	2	2	\N	{"en_US": "Alumnio reforzado", "es_ES": "Alumnio reforzado"}	\N	t	2026-11-25 09:43:20.653257	2026-11-25 09:43:20.653257	\N
 120	\N	14	3	2	2	\N	{"en_US": "Aluminio", "es_ES": "Aluminio"}	\N	t	2026-11-25 09:43:45.631823	2026-11-25 09:43:45.631823	\N
-121	\N	14	8	2	2	\N	{"en_US": "Titanio cepillado", "es_ES": "Titanio cepillado"}	\N	t	2026-11-25 09:45:26.77658	2026-11-25 09:45:26.77658	\N
+125	\N	3	10	2	2	#474a51	{"en_US": "Gris grafito", "es_ES": "Gris grafito"}	\N	t	2026-11-25 10:37:12.3909	2026-11-25 10:38:25.687263	\N
+110	\N	14	4	2	2	\N	{"en_US": "Carbono Alto Módulo", "es_ES": "Carbono Alto Módulo"}	\N	t	2026-11-25 09:33:46.966524	2026-11-25 10:40:16.004209	200
+111	\N	14	6	2	2	\N	{"en_US": "Carbono Estándar", "es_ES": "Carbono Estándar"}	\N	t	2026-11-25 09:33:54.11992	2026-11-25 10:40:16.004209	100
+115	\N	14	6	2	2	\N	{"en_US": "Cuadro ultraligero", "es_ES": "Cuadro ultraligero"}	\N	t	2026-11-25 09:35:59.106725	2026-11-25 10:40:16.004209	400
+116	\N	14	3	2	2	\N	{"en_US": "Carbono Reforzado", "es_ES": "Carbono Reforzado"}	\N	t	2026-11-25 09:36:08.39396	2026-11-25 10:40:16.004209	300
+119	\N	14	5	2	2	\N	{"en_US": "Alumnio reforzado", "es_ES": "Alumnio reforzado"}	\N	t	2026-11-25 09:43:20.653257	2026-11-25 10:40:27.907966	100
+121	\N	14	8	2	2	\N	{"en_US": "Titanio cepillado", "es_ES": "Titanio cepillado"}	\N	t	2026-11-25 09:45:26.77658	2026-11-25 10:40:35.587172	600
+127	\N	12	2	2	2	\N	{"en_US": "360Wh", "es_ES": "360Wh"}	\N	t	2026-11-25 10:42:49.758918	2026-11-25 10:43:31.84909	100
+128	\N	12	9	2	2	\N	{"en_US": "630Wh", "es_ES": "630Wh"}	\N	t	2026-11-25 10:42:55.775654	2026-11-25 10:43:31.84909	150
+122	\N	12	3	2	2	\N	{"en_US": "720Wh", "es_ES": "720Wh"}	\N	t	2026-11-25 10:36:38.74368	2026-11-25 10:43:31.84909	180
+123	\N	12	1	2	2	\N	{"en_US": "540Wh", "es_ES": "540Wh"}	\N	t	2026-11-25 10:36:43.597971	2026-11-25 10:43:31.84909	170
+124	\N	12	4	2	2	\N	{"en_US": "870Wh", "es_ES": "870Wh"}	\N	t	2026-11-25 10:36:56.677364	2026-11-25 10:43:31.84909	250
+126	\N	3	11	2	2	#9caf88	{"en_US": "Verde salvia", "es_ES": "Verde salvia"}	\N	t	2026-11-25 10:41:48.558098	2026-11-25 10:45:11.89612	\N
+129	\N	3	1	2	2	#ffff00	{"en_US": "Amarillo", "es_ES": "Amarillo"}	\N	t	2026-11-25 10:44:24.486877	2026-11-25 10:45:11.89612	\N
 \.
 
 
@@ -140615,8 +140829,6 @@ COPY public.product_attribute_value_product_template_attribute_line_rel (product
 55	10
 102	11
 103	11
-105	13
-104	13
 107	15
 108	15
 106	15
@@ -140628,7 +140840,6 @@ COPY public.product_attribute_value_product_template_attribute_line_rel (product
 114	17
 115	18
 116	18
-117	13
 51	19
 118	19
 51	20
@@ -140640,6 +140851,33 @@ COPY public.product_attribute_value_product_template_attribute_line_rel (product
 114	22
 120	23
 121	23
+122	24
+123	24
+124	24
+125	25
+109	25
+51	25
+110	26
+120	26
+54	27
+126	27
+120	28
+102	29
+127	29
+128	29
+51	30
+129	30
+109	30
+120	31
+119	31
+127	32
+106	33
+126	33
+112	33
+120	34
+120	35
+111	35
+116	35
 \.
 
 
@@ -140837,7 +141075,6 @@ COPY public.product_product (id, product_tmpl_id, create_uid, write_uid, default
 66	43	1	2	DUA4	\N		\N	\N	\N	t	f	f	\N	2026-11-20 11:47:13.131702	2026-11-17 08:42:49.387769	\N	\N	\N	1.0
 50	32	1	2	FURN_0002	\N		\N	\N	0.01	f	f	f	\N	2026-11-17 08:20:42.694463	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 94	71	1	1	\N	\N		\N	\N	0.00	t	f	f	\N	2026-11-20 11:54:34.003907	2026-11-20 11:54:34.003907	\N	\N	\N	1.0
-62	39	2	2	\N	\N		{"2": 190.0}	\N	\N	t	f	f	\N	2026-11-20 11:57:16.969915	2026-11-17 08:35:56.614382	\N	\N	\N	1.0
 48	30	1	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-17 08:22:09.314888	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 49	31	1	2	FURN_0001	2300001000008		\N	\N	0.01	f	f	f	\N	2026-11-17 08:22:21.882366	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 34	20	1	1	FURN_9001	40164785512001		{"1": 1700.0}	\N	0.01	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
@@ -140850,7 +141087,6 @@ COPY public.product_product (id, product_tmpl_id, create_uid, write_uid, default
 15	9	1	1	\N	\N	3,4	\N	\N	\N	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 18	9	1	1	\N	\N	3,5	\N	\N	\N	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 46	28	1	1	Delivery_010	\N		\N	\N	\N	t	f	f	\N	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
-61	38	2	2	\N	\N		{"2": 15.0}	\N	\N	t	f	f	\N	2026-11-20 11:57:22.130334	2026-11-17 08:35:45.308229	\N	\N	\N	1.0
 43	27	1	1	\N	\N	22	\N	\N	\N	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 41	26	1	1	FURN_6741	\N		{"1": 4500.0}	\N	0.01	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 40	25	1	1	FURN_8220	\N		{"1": 2500.0}	\N	0.01	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
@@ -140863,25 +141099,28 @@ COPY public.product_product (id, product_tmpl_id, create_uid, write_uid, default
 14	9	1	1	FURN_0098	\N	2,4	{"1": 500.0}	\N	0.01	f	t	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 16	9	1	1	FURN_0097	\N	1,5	{"1": 500.0}	\N	0.01	f	t	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 13	9	1	1	FURN_0096	\N	1,4	{"1": 500.0}	\N	0.01	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
-60	37	2	2	\N	\N		{"2": 9.0}	\N	\N	t	f	f	\N	2026-11-20 11:57:32.636104	2026-11-17 08:34:35.596664	\N	\N	\N	1.0
 53	35	1	2	FURN_5555	\N		{"1": 70.0}	\N	1.00	f	f	f	\N	2026-11-20 11:47:13.131702	2026-11-17 08:00:00.870439	\N	\N	\N	1.0
 38	23	1	1	FURN_6667	\N	20	\N	\N	\N	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 37	23	1	1	FURN_6666	\N	19	\N	\N	\N	f	f	f	\N	2026-11-20 11:33:40.437289	2026-11-17 07:59:51.022341	\N	\N	\N	1.0
 95	72	1	1	Delivery_007	\N		\N	\N	\N	t	f	f	\N	2026-11-20 12:39:43.887973	2026-11-20 12:39:43.887973	\N	\N	\N	1.0
 96	73	1	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-24 08:10:27.397825	2026-11-23 19:19:13.975302	\N	\N	\N	1.0
-54	36	2	2	\N	\N	25,28	\N	\N	\N	t	f	f	\N	2026-11-25 09:11:10.735526	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
-55	36	2	2	\N	\N	25,29	\N	\N	\N	t	f	f	\N	2026-11-25 09:11:10.735526	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
-56	36	2	2	\N	\N	26,28	\N	\N	\N	t	f	f	\N	2026-11-25 09:11:10.735526	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
-57	36	2	2	\N	\N	26,29	\N	\N	\N	t	f	f	\N	2026-11-25 09:11:10.735526	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
-104	80	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 09:12:12.30374	2026-11-25 09:10:04.046832	\N	\N	\N	0.0
-58	36	2	2	\N	\N	27,28	\N	\N	\N	t	f	f	\N	2026-11-25 09:11:10.735526	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
-59	36	2	2	\N	\N	27,29	\N	\N	\N	t	f	f	\N	2026-11-25 09:11:10.735526	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
-106	82	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 09:19:22.434944	2026-11-25 09:16:07.549404	\N	\N	\N	0.0
-100	77	2	2	\N	\N	31	\N	\N	\N	f	f	f	\N	2026-11-25 09:39:54.736346	2026-11-24 19:00:39.420262	\N	\N	\N	0.0
-105	81	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 09:15:08.16463	2026-11-25 09:13:27.033396	\N	\N	\N	0.0
-107	83	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 09:20:49.220529	2026-11-25 09:19:41.452475	\N	\N	\N	0.0
+208	92	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:15:10.664308	2026-11-25 11:14:07.562638	\N	\N	\N	0.0
+60	37	2	2	\N	\N		{"2": 9.0}	\N	\N	t	f	f	\N	2026-11-25 11:01:36.031921	2026-11-17 08:34:35.596664	\N	\N	\N	1.0
+104	80	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 09:10:04.046832	\N	\N	\N	0.0
+100	77	2	2	\N	\N	31	\N	\N	\N	f	f	f	\N	2026-11-25 10:51:58.559337	2026-11-24 19:00:39.420262	\N	\N	\N	0.0
+61	38	2	2	\N	\N		{"2": 15.0}	\N	\N	t	f	f	\N	2026-11-25 11:01:44.932822	2026-11-17 08:35:45.308229	\N	\N	\N	1.0
+106	82	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 10:46:15.808172	2026-11-25 09:16:07.549404	\N	\N	\N	0.0
+62	39	2	2	\N	\N		{"2": 190.0}	\N	\N	t	f	f	\N	2026-11-25 11:01:51.460855	2026-11-17 08:35:56.614382	\N	\N	\N	1.0
 102	78	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 09:43:56.556324	2026-11-24 19:13:13.953194	\N	\N	\N	0.0
+107	83	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 10:47:23.47062	2026-11-25 09:19:41.452475	\N	\N	\N	0.0
+54	36	2	2	\N	\N	25,28	\N	\N	\N	t	f	f	\N	2026-11-25 11:07:36.549518	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
 103	79	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 09:45:28.305357	2026-11-25 09:04:49.686419	\N	\N	\N	0.0
+55	36	2	2	\N	\N	25,29	\N	\N	\N	t	f	f	\N	2026-11-25 11:07:36.549518	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
+56	36	2	2	\N	\N	26,28	\N	\N	\N	t	f	f	\N	2026-11-25 11:07:36.549518	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
+57	36	2	2	\N	\N	26,29	\N	\N	\N	t	f	f	\N	2026-11-25 11:07:36.549518	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
+58	36	2	2	\N	\N	27,28	\N	\N	\N	t	f	f	\N	2026-11-25 11:07:36.549518	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
+59	36	2	2	\N	\N	27,29	\N	\N	\N	t	f	f	\N	2026-11-25 11:07:36.549518	2026-11-17 08:26:04.520893	\N	\N	\N	1.0
+105	81	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 10:42:58.032935	2026-11-25 09:13:27.033396	\N	\N	\N	0.0
 99	76	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 09:36:32.620872	2026-11-24 18:48:05.012634	\N	\N	\N	0.0
 127	76	2	2	\N	\N	43,46	\N	\N	\N	t	f	f	\N	2026-11-25 09:36:32.620872	2026-11-25 09:36:10.059005	\N	\N	\N	0.0
 128	76	2	2	\N	\N	43,47	\N	\N	\N	t	f	f	\N	2026-11-25 09:36:32.620872	2026-11-25 09:36:10.059005	\N	\N	\N	0.0
@@ -140889,11 +141128,14 @@ COPY public.product_product (id, product_tmpl_id, create_uid, write_uid, default
 130	76	2	2	\N	\N	44,47	\N	\N	\N	t	f	f	\N	2026-11-25 09:36:32.620872	2026-11-25 09:36:10.059005	\N	\N	\N	0.0
 131	76	2	2	\N	\N	45,46	\N	\N	\N	t	f	f	\N	2026-11-25 09:36:32.620872	2026-11-25 09:36:10.059005	\N	\N	\N	0.0
 132	76	2	2	\N	\N	45,47	\N	\N	\N	t	f	f	\N	2026-11-25 09:36:32.620872	2026-11-25 09:36:10.059005	\N	\N	\N	0.0
-134	77	2	2	\N	\N	32,49	\N	\N	\N	t	f	f	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346	\N	\N	\N	0.0
-135	77	2	2	\N	\N	32,50	\N	\N	\N	t	f	f	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346	\N	\N	\N	0.0
-136	77	2	2	\N	\N	31,49	\N	\N	\N	t	f	f	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346	\N	\N	\N	0.0
-137	77	2	2	\N	\N	31,50	\N	\N	\N	t	f	f	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346	\N	\N	\N	0.0
-138	77	2	2	\N	\N	48,49	\N	\N	\N	t	f	f	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346	\N	\N	\N	0.0
+174	81	2	2	\N	\N	68,70,71	\N	\N	\N	t	f	f	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935	\N	\N	\N	0.0
+175	81	2	2	\N	\N	68,70,72	\N	\N	\N	t	f	f	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935	\N	\N	\N	0.0
+176	81	2	2	\N	\N	68,70,73	\N	\N	\N	t	f	f	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935	\N	\N	\N	0.0
+177	81	2	2	\N	\N	69,70,71	\N	\N	\N	t	f	f	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935	\N	\N	\N	0.0
+178	81	2	2	\N	\N	69,70,72	\N	\N	\N	t	f	f	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935	\N	\N	\N	0.0
+179	81	2	2	\N	\N	69,70,73	\N	\N	\N	t	f	f	\N	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935	\N	\N	\N	0.0
+207	91	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:13:42.555671	2026-11-25 11:13:08.814176	\N	\N	\N	0.0
+204	88	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:09:32.489502	2026-11-25 11:09:32.489502	\N	\N	\N	0.0
 97	74	2	2	\N	\N		\N	\N	\N	f	f	f	\N	2026-11-25 09:34:21.541428	2026-11-24 18:03:41.007057	\N	\N	\N	0.0
 116	74	2	2	\N	\N	37,41	\N	\N	\N	t	f	f	\N	2026-11-25 09:34:21.541428	2026-11-25 09:34:01.199987	\N	\N	\N	0.0
 117	74	2	2	\N	\N	37,42	\N	\N	\N	t	f	f	\N	2026-11-25 09:34:21.541428	2026-11-25 09:34:01.199987	\N	\N	\N	0.0
@@ -140903,7 +141145,8 @@ COPY public.product_product (id, product_tmpl_id, create_uid, write_uid, default
 121	74	2	2	\N	\N	39,42	\N	\N	\N	t	f	f	\N	2026-11-25 09:34:21.541428	2026-11-25 09:34:01.199987	\N	\N	\N	0.0
 122	74	2	2	\N	\N	40,41	\N	\N	\N	t	f	f	\N	2026-11-25 09:34:21.541428	2026-11-25 09:34:01.199987	\N	\N	\N	0.0
 123	74	2	2	\N	\N	40,42	\N	\N	\N	t	f	f	\N	2026-11-25 09:34:21.541428	2026-11-25 09:34:01.199987	\N	\N	\N	0.0
-139	77	2	2	\N	\N	48,50	\N	\N	\N	t	f	f	\N	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346	\N	\N	\N	0.0
+205	89	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:11:12.524655	2026-11-25 11:09:58.775461	\N	\N	\N	0.0
+200	84	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:04:09.418282	2026-11-25 11:02:40.303678	\N	\N	\N	0.0
 150	79	2	2	\N	\N	56,58	\N	\N	\N	t	f	f	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357	\N	\N	\N	0.0
 151	79	2	2	\N	\N	56,59	\N	\N	\N	t	f	f	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357	\N	\N	\N	0.0
 142	78	2	2	\N	\N	51,53	\N	\N	\N	t	f	f	\N	2026-11-25 09:43:56.556324	2026-11-25 09:43:47.222474	\N	\N	\N	0.0
@@ -140914,6 +141157,43 @@ COPY public.product_product (id, product_tmpl_id, create_uid, write_uid, default
 147	78	2	2	\N	\N	52,55	\N	\N	\N	t	f	f	\N	2026-11-25 09:43:56.556324	2026-11-25 09:43:47.222474	\N	\N	\N	0.0
 152	79	2	2	\N	\N	57,58	\N	\N	\N	t	f	f	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357	\N	\N	\N	0.0
 153	79	2	2	\N	\N	57,59	\N	\N	\N	t	f	f	\N	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357	\N	\N	\N	0.0
+183	82	2	2	\N	\N	74,77,79	\N	\N	\N	t	f	f	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172	\N	\N	\N	0.0
+184	82	2	2	\N	\N	74,78,79	\N	\N	\N	t	f	f	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172	\N	\N	\N	0.0
+185	82	2	2	\N	\N	75,77,79	\N	\N	\N	t	f	f	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172	\N	\N	\N	0.0
+186	82	2	2	\N	\N	75,78,79	\N	\N	\N	t	f	f	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172	\N	\N	\N	0.0
+187	82	2	2	\N	\N	76,77,79	\N	\N	\N	t	f	f	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172	\N	\N	\N	0.0
+188	82	2	2	\N	\N	76,78,79	\N	\N	\N	t	f	f	\N	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172	\N	\N	\N	0.0
+201	85	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:05:29.483161	2026-11-25 11:04:39.560042	\N	\N	\N	0.0
+202	86	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:06:57.709304	2026-11-25 11:06:04.110168	\N	\N	\N	0.0
+203	87	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:08:16.54304	2026-11-25 11:07:31.029186	\N	\N	\N	0.0
+206	90	2	2	\N	\N		\N	\N	\N	t	f	f	\N	2026-11-25 11:12:37.566219	2026-11-25 11:11:43.162528	\N	\N	\N	0.0
+163	80	2	2	\N	\N	60,63,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+164	80	2	2	\N	\N	60,64,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+165	80	2	2	\N	\N	60,65,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+166	80	2	2	\N	\N	61,63,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+167	80	2	2	\N	\N	61,64,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+168	80	2	2	\N	\N	61,65,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+169	80	2	2	\N	\N	62,63,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+170	80	2	2	\N	\N	62,64,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+171	80	2	2	\N	\N	62,65,67	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131	\N	\N	\N	0.0
+154	80	2	2	\N	\N	60,63,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+155	80	2	2	\N	\N	60,64,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+156	80	2	2	\N	\N	60,65,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+157	80	2	2	\N	\N	61,63,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+158	80	2	2	\N	\N	61,64,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+159	80	2	2	\N	\N	61,65,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+160	80	2	2	\N	\N	62,63,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+161	80	2	2	\N	\N	62,64,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+162	80	2	2	\N	\N	62,65,66	\N	\N	\N	t	f	f	\N	2026-11-25 10:40:51.341131	2026-11-25 10:37:26.801454	\N	\N	\N	0.0
+189	83	2	2	\N	\N	80,83	\N	\N	\N	t	f	f	\N	2026-11-25 10:47:23.47062	2026-11-25 10:46:59.087764	\N	\N	\N	0.0
+190	83	2	2	\N	\N	81,83	\N	\N	\N	t	f	f	\N	2026-11-25 10:47:23.47062	2026-11-25 10:46:59.087764	\N	\N	\N	0.0
+191	83	2	2	\N	\N	82,83	\N	\N	\N	t	f	f	\N	2026-11-25 10:47:23.47062	2026-11-25 10:46:59.087764	\N	\N	\N	0.0
+194	77	2	2	\N	\N	49,84	\N	\N	\N	t	f	f	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337	\N	\N	\N	0.0
+195	77	2	2	\N	\N	49,85	\N	\N	\N	t	f	f	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337	\N	\N	\N	0.0
+196	77	2	2	\N	\N	49,86	\N	\N	\N	t	f	f	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337	\N	\N	\N	0.0
+197	77	2	2	\N	\N	50,84	\N	\N	\N	t	f	f	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337	\N	\N	\N	0.0
+198	77	2	2	\N	\N	50,85	\N	\N	\N	t	f	f	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337	\N	\N	\N	0.0
+199	77	2	2	\N	\N	50,86	\N	\N	\N	t	f	f	\N	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337	\N	\N	\N	0.0
 \.
 
 
@@ -140942,6 +141222,13 @@ COPY public.product_public_category (id, website_id, sequence, parent_id, create
 18	1	10050	1	2	2	\N	1/18/	\N	\N	\N	\N	{"en_US": "Urbana", "es_ES": "Urbana"}	\N	\N	f	f	t	f	2026-11-24 18:52:41.97448	2026-11-24 18:52:41.97448
 19	1	10055	1	2	2	\N	1/19/	\N	\N	\N	\N	{"en_US": "Plegable", "es_ES": "Plegable"}	\N	\N	f	f	t	f	2026-11-24 18:52:50.034311	2026-11-24 18:52:50.034311
 20	\N	10060	\N	2	2	\N	20/	\N	\N	\N	\N	{"en_US": "bicil", "es_ES": "bicil"}	\N	\N	f	f	t	f	2026-11-25 09:13:48.385781	2026-11-25 09:13:48.385781
+21	1	10065	3	2	2	\N	3/21/	\N	\N	\N	\N	{"en_US": "Cámara de aire", "es_ES": "Cámara de aire"}	\N	\N	f	f	t	f	2026-11-25 10:57:20.892107	2026-11-25 10:57:20.892107
+22	1	10070	3	2	2	\N	3/22/	\N	\N	\N	\N	{"en_US": "Pastillas de freno", "es_ES": "Pastillas de freno"}	\N	\N	f	f	t	f	2026-11-25 10:57:47.079093	2026-11-25 10:57:47.079093
+23	1	10075	\N	2	2	\N	23/	\N	\N	\N	\N	{"en_US": "Mantenimiento", "es_ES": "Mantenimiento"}	\N	\N	f	f	t	f	2026-11-25 10:58:07.495376	2026-11-25 10:58:07.495376
+24	1	10080	2	2	2	\N	2/24/	\N	\N	\N	\N	{"en_US": "Seguridad", "es_ES": "Seguridad"}	\N	\N	f	f	t	f	2026-11-25 10:58:28.565956	2026-11-25 10:58:28.565956
+25	1	10085	3	2	2	\N	3/25/	\N	\N	\N	\N	{"en_US": "Cubierta", "es_ES": "Cubierta"}	\N	\N	f	f	t	f	2026-11-25 10:59:03.950782	2026-11-25 10:59:03.950782
+26	1	10090	3	2	2	\N	3/26/	\N	\N	\N	\N	{"en_US": "Batería", "es_ES": "Batería"}	\N	\N	f	f	t	f	2026-11-25 11:00:19.256278	2026-11-25 11:00:19.256278
+27	\N	10095	\N	2	2	\N	27/	\N	\N	\N	\N	{"en_US": "reou", "es_ES": "reou"}	\N	\N	f	f	t	f	2026-11-25 11:04:51.871482	2026-11-25 11:04:51.871482
 \.
 
 
@@ -140974,6 +141261,25 @@ COPY public.product_public_category_product_template_rel (product_public_categor
 19	82
 1	83
 18	83
+3	38
+25	38
+3	39
+26	39
+3	37
+22	37
+3	84
+21	84
+3	85
+22	85
+23	86
+23	87
+24	88
+2	88
+2	89
+24	89
+2	90
+2	91
+2	92
 \.
 
 
@@ -141045,6 +141351,16 @@ COPY public.product_supplier_taxes_rel (prod_id, tax_id) FROM stdin;
 81	221
 82	221
 83	221
+84	221
+85	221
+86	221
+87	221
+88	221
+88	2
+89	221
+90	221
+91	221
+92	221
 \.
 
 
@@ -141093,6 +141409,15 @@ COPY public.product_supplierinfo (id, partner_id, sequence, product_uom_id, comp
 39	52	1	1	2	126	\N	81	3	2	2	\N	\N	\N	\N	0.00	2000.0	0.00	2026-11-25 09:15:08.16463	2026-11-25 09:15:08.16463
 40	52	1	1	2	126	\N	82	1	2	2	\N	\N	\N	\N	0.00	1300.0	0.00	2026-11-25 09:17:47.145402	2026-11-25 09:17:47.145402
 41	52	1	1	2	126	\N	83	1	2	2	\N	\N	\N	\N	0.00	500.0	0.00	2026-11-25 09:20:49.220529	2026-11-25 09:20:49.220529
+42	53	1	1	2	126	\N	84	3	2	2	\N	\N	\N	\N	0.00	6.0	0.00	2026-11-25 11:04:09.418282	2026-11-25 11:04:09.418282
+43	53	1	1	2	126	\N	85	3	2	2	\N	\N	\N	\N	0.00	13.0	0.00	2026-11-25 11:05:29.483161	2026-11-25 11:05:29.483161
+44	53	1	1	2	126	\N	86	3	2	2	\N	\N	\N	\N	0.00	11.0	0.00	2026-11-25 11:06:57.709304	2026-11-25 11:06:57.709304
+45	53	1	1	2	126	\N	87	3	2	2	\N	\N	\N	\N	0.00	22.0	0.00	2026-11-25 11:08:16.54304	2026-11-25 11:08:16.54304
+46	53	1	1	2	126	\N	88	3	2	2	\N	\N	\N	\N	0.00	65.69	0.00	2026-11-25 11:09:32.489502	2026-11-25 11:09:32.489502
+47	53	1	1	2	126	\N	89	3	2	2	\N	\N	\N	\N	0.00	32.9	0.00	2026-11-25 11:09:58.775461	2026-11-25 11:09:58.775461
+48	53	1	1	2	126	\N	90	3	2	2	\N	\N	\N	\N	0.00	12.0	0.00	2026-11-25 11:12:37.566219	2026-11-25 11:12:37.566219
+49	53	1	1	2	126	\N	91	3	2	2	\N	\N	\N	\N	0.00	20.0	0.00	2026-11-25 11:13:42.555671	2026-11-25 11:13:42.555671
+50	53	1	1	2	126	\N	92	3	2	2	\N	\N	\N	\N	0.00	42.0	0.00	2026-11-25 11:15:10.664308	2026-11-25 11:15:10.664308
 \.
 
 
@@ -141181,6 +141506,15 @@ COPY public.product_taxes_rel (prod_id, tax_id) FROM stdin;
 81	219
 82	219
 83	219
+84	219
+85	219
+86	219
+87	219
+88	219
+89	219
+90	219
+91	219
+92	219
 \.
 
 
@@ -141189,12 +141523,9 @@ COPY public.product_taxes_rel (prod_id, tax_id) FROM stdin;
 --
 
 COPY public.product_template (id, sequence, categ_id, uom_id, company_id, color, create_uid, write_uid, type, service_tracking, default_code, name, description, description_purchase, description_sale, product_properties, list_price, volume, weight, sale_ok, purchase_ok, active, can_image_1024_be_zoomed, has_configurable_attributes, is_favorite, create_date, write_date, sale_delay, lot_sequence_id, tracking, responsible_id, property_stock_production, property_stock_inventory, description_picking, description_pickingout, description_pickingin, is_storable, property_account_income_id, property_account_expense_id, purchase_method, purchase_line_warn_msg, property_price_difference_account_id, lot_valuated, service_type, expense_policy, invoice_policy, sale_line_warn_msg, service_to_purchase, pos_sequence, public_description, available_in_pos, to_weight, country_of_origin, hs_code, variants_default_code, website_id, website_size_x, website_size_y, website_ribbon_id, website_sequence, base_unit_id, website_meta_og_img, website_meta_title, website_meta_description, website_meta_keywords, seo_name, website_description, description_ecommerce, base_unit_count, compare_list_price, is_published, is_seo_optimized, publish_date, rating_last_value, out_of_stock_message, allow_out_of_stock_order, show_availability, available_threshold) FROM stdin;
-38	1	\N	1	\N	\N	2	1	consu	no	\N	{"en_US": "Cubierta Antipinchazos 28\\"", "es_ES": "Cubierta Antipinchazos 28\\""}	\N	\N	\N	\N	38.0	0.00	0.00	t	t	t	f	f	f	2026-11-17 08:35:45.308229	2026-11-20 12:39:46.036801	0	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	\N	1	1	\N	10010	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
-37	1	\N	1	\N	\N	2	1	consu	no	\N	{"en_US": "Kit Pastillas de Freno Hidráulico", "es_ES": "Kit Pastillas de Freno Hidráulico"}	\N	\N	\N	\N	25.0	0.00	0.00	t	t	t	f	f	f	2026-11-17 08:34:35.596664	2026-11-20 12:39:46.036801	0	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	\N	1	1	\N	10015	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 62	1	3	1	\N	\N	1	1	consu	no	TIPS	{"en_US": "Tips", "es_ES": "Propinas"}	\N	\N	\N	\N	1.0	0.00	0.01	t	t	t	f	f	\N	2026-11-20 11:54:28.547083	2026-11-20 12:39:46.036801	0	12	none	\N	\N	\N	\N	\N	\N	f	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	2	\N	f	\N	\N	\N	TIPS	\N	1	1	\N	10020	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 18	1	5	1	\N	\N	1	1	consu	no	FURN_1118	{"en_US": "Corner Desk Left Sit", "es_ES": "Escritorio en L con asiento a la izquierda"}	\N	\N	{"en_US": "Left-sided workspace with storage", "es_ES": "Espacio de trabajo con almacenamiento en el lado izquierdo"}	\N	85.0	0.00	0.01	t	t	f	t	t	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	delivery	\N	\N	1	\N	\N	\N	\N	\N	FURN_1118	\N	1	1	\N	10025	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 43	1	3	1	\N	\N	1	1	service	no	DUA4	{"en_US": "DUA VAT Valuation 4%", "es_ES": "DUA Valoración IVA 4 %"}	\N	\N	\N	\N	1.0	0.00	0.00	f	t	t	f	f	\N	2026-11-17 08:42:49.387769	2026-11-20 12:39:46.036801	0	12	none	\N	\N	\N	\N	\N	\N	f	\N	\N	purchase	\N	\N	f	manual	no	order	\N	\N	1	\N	\N	\N	\N	\N	DUA4	\N	1	1	\N	10125	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
-39	1	\N	1	\N	\N	2	1	consu	no	\N	{"en_US": "Batería Litio Repuesto 500Wh", "es_ES": "Batería Litio Repuesto 500Wh"}	\N	\N	\N	\N	350.0	0.00	0.00	t	t	t	f	f	f	2026-11-17 08:35:56.614382	2026-11-20 12:39:46.036801	0	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	\N	1	1	\N	10005	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 15	1	5	1	\N	\N	1	1	consu	no	E-COM11	{"en_US": "Cabinet with Doors", "es_ES": "Armario con puertas"}	\N	\N	\N	\N	140.0	0.00	0.01	t	t	f	f	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	delivery	\N	\N	1	\N	\N	\N	\N	\N	E-COM11	\N	1	1	\N	10075	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 24	1	5	1	\N	\N	1	1	consu	no	FURN_8855	{"en_US": "Drawer", "es_ES": "Cajón"}	{"en_US": "<p>Drawer with two routing possiblities</p>", "es_ES": "<p>Cajón con dos opciones de enrutamiento</p>"}	\N	\N	\N	110.5	0.00	0.01	t	t	f	f	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	lot	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	\N	manual	no	delivery	\N	\N	1	\N	\N	\N	\N	\N	FURN_8855	\N	1	1	\N	10080	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 71	1	3	1	\N	\N	1	1	service	no	\N	{"en_US": "Down Payment (POS)", "es_ES": "Anticipo (TPV)"}	\N	\N	\N	\N	0.0	0.00	0.00	t	f	t	f	f	\N	2026-11-20 11:54:34.003907	2026-11-20 12:39:46.036801	0	12	none	\N	\N	\N	\N	\N	\N	f	\N	\N	purchase	\N	\N	f	manual	no	order	\N	\N	3	\N	f	\N	\N	\N	\N	\N	1	1	\N	10095	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
@@ -141213,6 +141544,7 @@ COPY public.product_template (id, sequence, categ_id, uom_id, company_id, color,
 25	1	5	1	\N	\N	1	1	consu	no	FURN_8220	{"en_US": "Four Person Desk", "es_ES": "Escritorio para cuatro personas"}	\N	\N	\N	\N	2350.0	0.00	0.01	t	t	f	f	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	delivery	\N	\N	1	\N	\N	\N	\N	\N	FURN_8220	\N	1	1	\N	10030	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 16	1	5	1	\N	\N	1	1	consu	no	\N	{"en_US": "Conference Chair", "es_ES": "Silla de conferencias"}	\N	\N	\N	\N	33.0	0.00	0.00	t	t	f	t	t	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	delivery	\N	\N	1	\N	\N	\N	\N	\N	E-COM13␞E-COM12	\N	1	1	\N	10035	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 21	1	5	1	\N	\N	1	1	consu	no	FURN_7888	{"en_US": "Desk Stand with Screen", "es_ES": "Soporte de escritorio con pantalla"}	\N	\N	\N	\N	2100.0	0.00	0.01	t	t	f	f	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	delivery	\N	\N	1	\N	\N	\N	\N	\N	FURN_7888	\N	1	1	\N	10040	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
+39	1	\N	1	\N	\N	2	2	consu	no	\N	{"en_US": "Batería Litio Repuesto 500Wh", "es_ES": "Batería Litio Repuesto 500Wh"}	\N	\N	\N	\N	350.0	0.00	0.00	t	t	t	f	f	f	2026-11-17 08:35:56.614382	2026-11-25 11:01:51.460855	0	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	1	1	1	\N	10005	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	t	f	2026-11-25 10:59:54	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	t	\N	5
 72	1	10	1	\N	\N	1	1	service	no	Delivery_007	{"en_US": "Standard delivery", "es_ES": "Entrega estándar"}	\N	\N	\N	\N	0.0	0.00	0.00	f	f	t	f	f	\N	2026-11-20 12:39:43.887973	2026-11-20 12:39:46.036801	0	12	none	\N	\N	\N	\N	\N	\N	f	\N	\N	purchase	\N	\N	f	manual	no	order	\N	\N	4	\N	f	\N	\N	\N	Delivery_007	\N	1	1	\N	10045	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 22	1	5	1	\N	\N	1	1	consu	no	FURN_0789	{"en_US": "Individual Workplace", "es_ES": "Lugar de trabajo individual"}	\N	\N	{"en_US": "Private pod with desk and chair", "es_ES": "Cabina privada con escritorio y silla"}	\N	885.0	0.00	0.01	t	t	f	t	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	\N	\N	\N	\N	FURN_0789	\N	1	1	\N	10050	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 19	1	5	1	\N	\N	1	1	consu	no	FURN_8900	{"en_US": "Drawer Black", "es_ES": "Cajón negro"}	\N	\N	\N	\N	25.0	0.00	0.01	t	t	f	f	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	\N	\N	\N	\N	FURN_8900	\N	1	1	\N	10055	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
@@ -141231,16 +141563,27 @@ COPY public.product_template (id, sequence, categ_id, uom_id, company_id, color,
 7	1	5	1	\N	\N	1	1	consu	no	FURN_9999	{"en_US": "Office Design Software", "es_ES": "Software de diseño de oficina"}	\N	\N	{"en_US": "Design and plan smart offices with ease", "es_ES": "Diseña oficinas inteligentes con facilidad"}	\N	280.0	0.00	0.01	t	t	f	f	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	\N	\N	\N	\N	FURN_9999	\N	1	1	\N	10200	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 33	1	5	1	\N	\N	1	1	consu	no	FURN_0006	{"en_US": "Monitor Stand", "es_ES": "Soporte de monitor"}	\N	\N	\N	\N	3.19	0.00	0.01	t	t	f	f	f	\N	2026-11-17 07:59:51.022341	2026-11-20 12:39:46.036801	0	\N	none	\N	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	\N	\N	\N	\N	FURN_0006	\N	1	1	\N	10205	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	\N	f	2026-11-20 12:39:46	0	\N	t	\N	5
 73	1	\N	1	2	\N	1	2	service	no	\N	{"en_US": "Pick up in store", "es_ES": "Recogida en la tienda"}	\N	\N	\N	\N	0.0	0.00	0.00	f	f	t	f	f	\N	2026-11-23 19:19:13.975302	2026-11-24 08:10:27.397825	0	12	none	\N	\N	\N	\N	\N	\N	f	\N	\N	purchase	\N	\N	f	manual	no	order	\N	\N	5	\N	f	\N	\N	\N		\N	1	1	\N	10210	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	f	f	2026-11-23 19:19:15	0	\N	f	f	5
-36	1	\N	1	2	\N	2	2	consu	no	\N	{"en_US": "Bicicleta Eléctrica Urbana BV-1", "es_ES": "Bicicleta Eléctrica Urbana BV-1"}	\N	\N	\N	\N	1490.0	0.00	0.00	t	t	t	t	t	f	2026-11-17 08:26:04.520893	2026-11-25 09:11:10.735526	0	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	\N	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	\N	1	1	\N	10000	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	t	f	2026-11-24 07:51:28	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	\N	5
-80	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "VOLTIO TRAIL E-MTB", "es_ES": "VOLTIO TRAIL E-MTB"}	\N	\N	\N	\N	4799.0	0.00	0.00	t	t	t	f	f	f	2026-11-25 09:10:04.046832	2026-11-25 09:12:12.30374	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	11	{"en_US": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>"}	t	f	\N	\N		1	1	1	\N	10240	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>"}	0.0	\N	t	f	2026-11-25 09:10:12	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
-81	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "BRISA E-CITY", "es_ES": "BRISA E-CITY"}	\N	\N	\N	\N	2199.0	0.00	0.00	t	t	t	f	f	f	2026-11-25 09:13:27.033396	2026-11-25 09:15:08.16463	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	12	{"en_US": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>"}	t	f	\N	\N		1	1	1	\N	10245	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>"}	0.0	\N	t	f	2026-11-25 09:13:35	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
-82	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "NÓMADA FOLD-E", "es_ES": "NÓMADA FOLD-E"}	\N	\N	\N	\N	1499.0	0.00	0.00	t	t	t	f	f	f	2026-11-25 09:16:07.549404	2026-11-25 09:19:22.434944	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	13	{"en_US": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote>", "es_ES": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote>"}	t	f	\N	\N		1	1	1	\N	10250	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<blockquote data-oe-version=\\"2.0\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote><h3><br></h3>", "es_ES": "<blockquote data-oe-version=\\"2.0\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote><h3><br></h3>"}	0.0	\N	t	f	2026-11-25 09:16:27	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
-83	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "PASEO METRO", "es_ES": "PASEO METRO"}	\N	\N	\N	\N	649.0	0.00	0.00	t	t	t	f	f	f	2026-11-25 09:19:41.452475	2026-11-25 09:20:49.220529	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	14	{"en_US": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>", "es_ES": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>"}	t	f	\N	\N		1	1	1	\N	10255	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<blockquote data-oe-version=\\"2.0\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>", "es_ES": "<blockquote data-oe-version=\\"2.0\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>"}	0.0	\N	t	f	2026-11-25 09:20:07	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+36	1	\N	1	2	\N	2	2	consu	no	\N	{"en_US": "Bicicleta Eléctrica Urbana BV-1", "es_ES": "Bicicleta Eléctrica Urbana BV-1"}	\N	\N	\N	\N	1490.0	0.00	0.00	t	t	t	t	t	f	2026-11-17 08:26:04.520893	2026-11-25 11:07:36.549518	0	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	\N	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	\N	1	1	\N	10000	\N	\N	\N	\N	\N	\N	\N	\N	0.0	\N	t	f	2026-11-24 07:51:28	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	\N	5
+92	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Sillín Antipresión ErgoFlow", "es_ES": "Sillín Antipresión ErgoFlow"}	\N	\N	\N	\N	44.9	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:14:07.562638	2026-11-25 11:15:10.664308	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	23	{"en_US": "<div data-oe-version=\\"2.0\\">Canal central abierto para aliviar presión prostática y raíles de acero hueco.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Canal central abierto para aliviar presión prostática y raíles de acero hueco.</div>"}	t	f	\N	\N		1	1	1	\N	10300	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Canal central abierto para aliviar presión prostática y raíles de acero hueco.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Canal central abierto para aliviar presión prostática y raíles de acero hueco.</div>"}	0.0	\N	t	f	2026-11-25 11:14:13	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+80	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "VOLTIO TRAIL E-MTB", "es_ES": "VOLTIO TRAIL E-MTB"}	\N	\N	\N	\N	4399.0	0.00	0.00	t	t	t	f	t	f	2026-11-25 09:10:04.046832	2026-11-25 10:40:51.341131	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	11	{"en_US": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>"}	t	f	\N	\N		1	1	1	\N	10240	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Llega más lejos, sube más alto y repite tus bajadas favoritas sin mirar el reloj. La VOLTIO TRAIL E-MTB integra un potente motor central de 85 Nm con una batería de alta capacidad de 720 Wh que ofrece autonomía para jornadas épicas en la montaña. Su configuración de ruedas <i>mullet</i> (29\\" delante y 27,5\\" detrás) y 150 mm de suspensión te dan control total en los terrenos más rotos.</div>"}	0.0	\N	t	f	2026-11-25 09:10:12	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+82	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "NÓMADA FOLD-E", "es_ES": "NÓMADA FOLD-E"}	\N	\N	\N	\N	1499.0	0.00	0.00	t	t	t	f	t	f	2026-11-25 09:16:07.549404	2026-11-25 10:46:15.808172	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	13	{"en_US": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote>", "es_ES": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote>"}	t	f	\N	\N		1	1	1	\N	10250	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<blockquote data-oe-version=\\"2.0\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote><h3><br></h3>", "es_ES": "<blockquote data-oe-version=\\"2.0\\"><p>La libertad de la asistencia eléctrica en un formato compacto que cabe en cualquier rincón. La NÓMADA FOLD-E se pliega en apenas 15 segundos para acompañarte en el tren, en el maletero del coche o bajo tu escritorio en la oficina. Su batería extraíble integrada en la tija del sillín facilita la carga en cualquier enchufe, ofreciendo hasta 60 km de autonomía con un manejo ágil y ligero.</p></blockquote><h3><br></h3>"}	0.0	\N	t	f	2026-11-25 09:16:27	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+86	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Lubricante de Cera Seca EcoWax (120 ml)", "es_ES": "Lubricante de Cera Seca EcoWax (120 ml)"}	\N	\N	\N	\N	11.9	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:06:04.110168	2026-11-25 11:06:57.709304	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	17	{"en_US": "<div data-oe-version=\\"2.0\\">Repele el polvo y la suciedad manteniendo la cadena limpia por más kilómetros.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Repele el polvo y la suciedad manteniendo la cadena limpia por más kilómetros.</div>"}	t	f	\N	\N		1	1	1	\N	10270	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Repele el polvo y la suciedad manteniendo la cadena limpia por más kilómetros.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Repele el polvo y la suciedad manteniendo la cadena limpia por más kilómetros.</div>"}	0.0	\N	t	f	2026-11-25 11:06:17	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
 74	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "AERO-X1", "es_ES": "AERO-X1"}	\N	\N	\N	\N	3999.0	0.00	0.00	t	t	t	f	t	f	2026-11-24 18:03:41.007057	2026-11-25 09:34:21.541428	0	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	6	{"en_US": "<div data-oe-version=\\"2.0\\">Cuadro de carbono de alto módulo, grupo electrónico inalámbrico de 12v y ruedas de carbono de 50 mm.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Cuadro de carbono de alto módulo, grupo electrónico inalámbrico de 12v y ruedas de carbono de 50 mm.</div>"}	t	f	\N	\N		\N	1	1	\N	10215	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Cuadro de carbono de alto módulo, grupo electrónico inalámbrico de 12v y ruedas de carbono de 50 mm.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Cuadro de carbono de alto módulo, grupo electrónico inalámbrico de 12v y ruedas de carbono de 50 mm.</div>"}	0.0	\N	t	f	2026-11-24 18:17:34	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+87	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Multiherramienta Compacta 11 en 1", "es_ES": "Multiherramienta Compacta 11 en 1"}	\N	\N	\N	\N	24.95	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:07:31.029186	2026-11-25 11:08:16.54304	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	18	{"en_US": "<div data-oe-version=\\"2.0\\">Incluye llaves Allen (2 a 8 mm), Torx T25, destornilladores y tronchacadenas integrado.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Incluye llaves Allen (2 a 8 mm), Torx T25, destornilladores y tronchacadenas integrado.</div>"}	t	f	\N	\N		1	1	1	\N	10275	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Incluye llaves Allen (2 a 8 mm), Torx T25, destornilladores y tronchacadenas integrado.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Incluye llaves Allen (2 a 8 mm), Torx T25, destornilladores y tronchacadenas integrado.</div>"}	0.0	\N	t	f	2026-11-25 11:07:31	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+88	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Casco Deportivo Ventus con Protección MIPS", "es_ES": "Casco Deportivo Ventus con Protección MIPS"}	\N	\N	\N	\N	69.99	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:09:32.489502	2026-11-25 11:09:32.489502	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	19	{"en_US": "<div data-oe-version=\\"2.0\\">22 canales de ventilación, ajuste micrométrico trasero y sistema de absorción de impactos.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">22 canales de ventilación, ajuste micrométrico trasero y sistema de absorción de impactos.</div>"}	t	f	\N	\N		1	1	1	\N	10280	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">22 canales de ventilación, ajuste micrométrico trasero y sistema de absorción de impactos.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">22 canales de ventilación, ajuste micrométrico trasero y sistema de absorción de impactos.</div>"}	0.0	\N	t	f	2026-11-25 11:09:32	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+89	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Kit de Luces LED USB-C (Delantera 500 lm + Trasera)", "es_ES": "Kit de Luces LED USB-C (Delantera 500 lm + Trasera)"}	\N	\N	\N	\N	34.9	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:09:58.775461	2026-11-25 11:11:12.524655	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	20	{"en_US": "<div data-oe-version=\\"2.0\\">Resistentes al agua (IPX5), modo parpadeo diurno y batería recargable.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Resistentes al agua (IPX5), modo parpadeo diurno y batería recargable.</div>"}	t	f	\N	\N		1	1	1	\N	10285	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Resistentes al agua (IPX5), modo parpadeo diurno y batería recargable.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Resistentes al agua (IPX5), modo parpadeo diurno y batería recargable.</div>"}	0.0	\N	t	f	2026-11-25 11:09:58	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
 76	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "VÉRTICE SL", "es_ES": "VÉRTICE SL"}	\N	\N	\N	\N	3499.0	0.00	0.00	t	t	t	f	t	f	2026-11-24 18:48:05.012634	2026-11-25 09:38:10.151469	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	7	{"en_US": "<div data-oe-version=\\"2.0\\">Cuando la carretera se empina, cada gramo cuenta. Con un cuadro de carbono ultraligero de solo 780 gramos, la VÉRTICE SL ofrece una agilidad explosiva en los puertos más exigentes y una precisión quirúrgica en los descensos gracias a sus frenos de disco hidráulicos. Una escaladora pura, reactiva y cómoda en rutas de gran fondo que te invita a atacar en cada rampa.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Cuando la carretera se empina, cada gramo cuenta. Con un cuadro de carbono ultraligero de solo 780 gramos, la VÉRTICE SL ofrece una agilidad explosiva en los puertos más exigentes y una precisión quirúrgica en los descensos gracias a sus frenos de disco hidráulicos. Una escaladora pura, reactiva y cómoda en rutas de gran fondo que te invita a atacar en cada rampa.</div>"}	t	f	\N	\N		1	1	1	\N	10220	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Cuando la carretera se empina, cada gramo cuenta. Con un cuadro de carbono ultraligero de solo 780 gramos, la VÉRTICE SL ofrece una agilidad explosiva en los puertos más exigentes y una precisión quirúrgica en los descensos gracias a sus frenos de disco hidráulicos. Una escaladora pura, reactiva y cómoda en rutas de gran fondo que te invita a atacar en cada rampa.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Cuando la carretera se empina, cada gramo cuenta. Con un cuadro de carbono ultraligero de solo 780 gramos, la VÉRTICE SL ofrece una agilidad explosiva en los puertos más exigentes y una precisión quirúrgica en los descensos gracias a sus frenos de disco hidráulicos. Una escaladora pura, reactiva y cómoda en rutas de gran fondo que te invita a atacar en cada rampa.</div>"}	0.0	\N	t	f	2026-11-24 18:50:06	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
-77	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "CUMBRE PRO 29", "es_ES": "CUMBRE PRO 29"}	\N	\N	\N	\N	1599.0	0.00	0.00	t	t	t	f	t	f	2026-11-24 19:00:39.420262	2026-11-25 09:39:54.736346	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	8	{"en_US": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>"}	t	f	\N	\N		1	1	1	\N	10225	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>"}	0.0	\N	t	f	2026-11-24 19:00:39	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
 78	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "TERRENO FS", "es_ES": "TERRENO FS"}	\N	\N	\N	\N	2499.0	0.00	0.00	t	t	t	f	t	f	2026-11-24 19:13:13.953194	2026-11-25 09:43:56.556324	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	9	{"en_US": "<div data-oe-version=\\"2.0\\">Una bicicleta nacida para explorar sin límites. Con 140 mm de recorrido en ambas suspensiones y tija telescópica de serie, la TERRENO FS absorbe raíces, piedras y cortados con total aplomo, manteniendo una excelente capacidad pedaleadora cuando toca volver a subir. Versátil, robusta y divertida: la compañera ideal para rutas técnicas de montaña.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Una bicicleta nacida para explorar sin límites. Con 140 mm de recorrido en ambas suspensiones y tija telescópica de serie, la TERRENO FS absorbe raíces, piedras y cortados con total aplomo, manteniendo una excelente capacidad pedaleadora cuando toca volver a subir. Versátil, robusta y divertida: la compañera ideal para rutas técnicas de montaña.</div>"}	t	f	\N	\N		1	1	1	\N	10230	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Una bicicleta nacida para explorar sin límites. Con 140 mm de recorrido en ambas suspensiones y tija telescópica de serie, la TERRENO FS absorbe raíces, piedras y cortados con total aplomo, manteniendo una excelente capacidad pedaleadora cuando toca volver a subir. Versátil, robusta y divertida: la compañera ideal para rutas técnicas de montaña.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Una bicicleta nacida para explorar sin límites. Con 140 mm de recorrido en ambas suspensiones y tija telescópica de serie, la TERRENO FS absorbe raíces, piedras y cortados con total aplomo, manteniendo una excelente capacidad pedaleadora cuando toca volver a subir. Versátil, robusta y divertida: la compañera ideal para rutas técnicas de montaña.</div>"}	0.0	\N	t	f	2026-11-24 19:13:13	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
 79	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "HORIZONTE GRV", "es_ES": "HORIZONTE GRV"}	\N	\N	\N	\N	1699.0	0.00	0.00	t	t	t	f	t	f	2026-11-25 09:04:49.686419	2026-11-25 09:45:28.305357	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	10	{"en_US": "<div data-oe-version=\\"2.0\\">Donde termina el asfalto empieza su verdadero territorio. La HORIZONTE GRV une la velocidad de una bicicleta de carretera con la resistencia y estabilidad necesarias para devorar pistas de tierra y senderos. Equipada con múltiples puntos de anclaje para bolsas y portabultos, además de neumáticos anchos de 45 mm, está lista tanto para salidas rápidas después del trabajo como para viajes de <i>bikepacking</i> de varios días.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Donde termina el asfalto empieza su verdadero territorio. La HORIZONTE GRV une la velocidad de una bicicleta de carretera con la resistencia y estabilidad necesarias para devorar pistas de tierra y senderos. Equipada con múltiples puntos de anclaje para bolsas y portabultos, además de neumáticos anchos de 45 mm, está lista tanto para salidas rápidas después del trabajo como para viajes de <i>bikepacking</i> de varios días.</div>"}	t	f	\N	\N		\N	1	1	\N	10235	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Donde termina el asfalto empieza su verdadero territorio. La HORIZONTE GRV une la velocidad de una bicicleta de carretera con la resistencia y estabilidad necesarias para devorar pistas de tierra y senderos. Equipada con múltiples puntos de anclaje para bolsas y portabultos, además de neumáticos anchos de 45 mm, está lista tanto para salidas rápidas después del trabajo como para viajes de <i>bikepacking</i> de varios días.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Donde termina el asfalto empieza su verdadero territorio. La HORIZONTE GRV une la velocidad de una bicicleta de carretera con la resistencia y estabilidad necesarias para devorar pistas de tierra y senderos. Equipada con múltiples puntos de anclaje para bolsas y portabultos, además de neumáticos anchos de 45 mm, está lista tanto para salidas rápidas después del trabajo como para viajes de <i>bikepacking</i> de varios días.</div>"}	0.0	\N	t	f	2026-11-25 09:05:19	0	\N	f	f	5
+81	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "BRISA E-CITY", "es_ES": "BRISA E-CITY"}	\N	\N	\N	\N	2199.0	0.00	0.00	t	t	t	f	t	f	2026-11-25 09:13:27.033396	2026-11-25 10:42:58.032935	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	12	{"en_US": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>"}	t	f	\N	\N		1	1	1	\N	10245	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Muévete por la ciudad con total naturalidad, sin sudar y olvidándote de los atascos. La BRISA E-CITY cuenta con un cuadro de acceso bajo pensado para subir y bajar con comodidad en cualquier semáforo, un motor trasero silencioso y una batería integrada de hasta 90 km de autonomía. Incluye luces LED, guardabarros y portabultos para que solo tengas que subirte y disfrutar del trayecto.</div>"}	0.0	\N	t	f	2026-11-25 09:13:35	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+83	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "PASEO METRO", "es_ES": "PASEO METRO"}	\N	\N	\N	\N	649.0	0.00	0.00	t	t	t	f	t	f	2026-11-25 09:19:41.452475	2026-11-25 10:47:23.47062	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	14	{"en_US": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>", "es_ES": "<blockquote data-oe-version=\\"2.0\\" data-o-mail-quote-node=\\"1\\" data-o-mail-quote=\\"1\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>"}	t	f	\N	\N		1	1	1	\N	10255	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<blockquote data-oe-version=\\"2.0\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>", "es_ES": "<blockquote data-oe-version=\\"2.0\\"><p>Sencilla, ágil y diseñada para el ritmo diario de la ciudad. La PASEO METRO ofrece una postura cómoda que te permite controlar el tráfico con seguridad, un cuadro de aluminio ligero fácil de subir por escaleras y un cambio de 8 velocidades con cubrecadenas para proteger tu ropa. El equilibrio perfecto entre fiabilidad, bajo mantenimiento y estilo urbano.</p></blockquote>"}	0.0	\N	t	f	2026-11-25 09:20:07	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+77	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "CUMBRE PRO 29", "es_ES": "CUMBRE PRO 29"}	\N	\N	\N	\N	1599.0	0.00	0.00	t	t	t	f	t	f	2026-11-24 19:00:39.420262	2026-11-25 10:51:58.559337	3	12	serial	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	8	{"en_US": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>"}	t	f	\N	\N		1	1	1	\N	10225	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Velocidad y eficiencia en estado puro para dominar pistas y circuitos de cross-country. La CUMBRE PRO 29 aprovecha la inercia de sus ruedas de 29 pulgadas junto con una horquilla de aire con bloqueo remoto desde el manillar para exprimir cada subida. Su transmisión monoplato de 12 velocidades garantiza cambios precisos y sin fallos incluso bajo máxima exigencia.</div>"}	0.0	\N	t	f	2026-11-24 19:00:39	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+37	1	\N	1	2	\N	2	2	consu	no	\N	{"en_US": "Kit Pastillas de Freno Hidráulico", "es_ES": "Kit Pastillas de Freno Hidráulico"}	\N	\N	\N	\N	25.0	0.00	0.00	t	t	t	f	f	f	2026-11-17 08:34:35.596664	2026-11-25 11:01:36.031921	0	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	1	1	1	\N	10015	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	t	f	2026-11-25 11:01:00	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	t	\N	5
+38	1	\N	1	2	\N	2	2	consu	no	\N	{"en_US": "Cubierta Antipinchazos 28\\"", "es_ES": "Cubierta Antipinchazos 28\\""}	\N	\N	\N	\N	38.0	0.00	0.00	t	t	t	f	f	f	2026-11-17 08:35:45.308229	2026-11-25 11:01:44.932822	0	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	1	\N	t	\N	\N	\N	\N	1	1	1	\N	10010	\N	\N	\N	\N	\N	\N	\N	\N	1.0	\N	t	f	2026-11-25 10:56:11	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	t	\N	5
+84	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Cámara de Aire Butyl Pro (29\\" / 700c)", "es_ES": "Cámara de Aire Butyl Pro (29\\" / 700c)"}	\N	\N	\N	\N	6.95	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:02:40.303678	2026-11-25 11:04:09.418282	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	15	{"en_US": "<div data-oe-version=\\"2.0\\">Válvula fina (Presta) de 48 mm con obús desmontable.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Válvula fina (Presta) de 48 mm con obús desmontable.</div>"}	t	f	\N	\N		1	1	1	\N	10260	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Válvula fina (Presta) de 48 mm con obús desmontable.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Válvula fina (Presta) de 48 mm con obús desmontable.</div>"}	0.0	\N	t	f	2026-11-25 11:02:47	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+85	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Juego de Pastillas de Freno Orgánicas (Resina)", "es_ES": "Juego de Pastillas de Freno Orgánicas (Resina)"}	\N	\N	\N	\N	14.5	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:04:39.560042	2026-11-25 11:05:29.483161	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	16	{"en_US": "<div data-oe-version=\\"2.0\\">Compatibles con pinzas Shimano/Tektro; frenada silenciosa y progresiva.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Compatibles con pinzas Shimano/Tektro; frenada silenciosa y progresiva.</div>"}	t	f	\N	\N		1	1	1	\N	10265	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Compatibles con pinzas Shimano/Tektro; frenada silenciosa y progresiva.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Compatibles con pinzas Shimano/Tektro; frenada silenciosa y progresiva.</div>"}	0.0	\N	t	f	2026-11-25 11:04:39	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+90	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Portabidón de Carga Lateral SideGrip", "es_ES": "Portabidón de Carga Lateral SideGrip"}	\N	\N	\N	\N	12.95	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:11:43.162528	2026-11-25 11:12:37.566219	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	21	{"en_US": "<div data-oe-version=\\"2.0\\">Polímero reforzado de alta sujeción, ideal para cuadros pequeños o con amortiguador.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Polímero reforzado de alta sujeción, ideal para cuadros pequeños o con amortiguador.</div>"}	t	f	\N	\N		1	1	1	\N	10290	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\">Polímero reforzado de alta sujeción, ideal para cuadros pequeños o con amortiguador.</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Polímero reforzado de alta sujeción, ideal para cuadros pequeños o con amortiguador.</div>"}	0.0	\N	t	f	2026-11-25 11:11:43	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
+91	1	\N	1	2	0	2	2	consu	no	\N	{"en_US": "Bolsa Bajo Sillín Impermeable DryPack (0,8 L)", "es_ES": "Bolsa Bajo Sillín Impermeable DryPack (0,8 L)"}	\N	\N	\N	\N	21.5	0.00	0.00	t	t	t	f	f	f	2026-11-25 11:13:08.814176	2026-11-25 11:13:42.555671	3	12	none	{"2": 2}	\N	\N	\N	\N	\N	t	\N	\N	receive	\N	\N	f	manual	no	order	\N	\N	22	{"en_US": "<div data-oe-version=\\"2.0\\"> Cierre termosellado con espacio para cámara, desmontables y multiherramienta.</div>", "es_ES": "<div data-oe-version=\\"2.0\\"> Cierre termosellado con espacio para cámara, desmontables y multiherramienta.</div>"}	t	f	\N	\N		1	1	1	\N	10295	\N	\N	\N	\N	\N	\N	\N	{"en_US": "<div data-oe-version=\\"2.0\\"> Cierre termosellado con espacio para cámara, desmontables y multiherramienta.</div>", "es_ES": "<div data-oe-version=\\"2.0\\"> Cierre termosellado con espacio para cámara, desmontables y multiherramienta.</div>"}	0.0	\N	t	f	2026-11-25 11:13:08	0	{"en_US": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>", "es_ES": "<div data-oe-version=\\"2.0\\">Actualmento no tenemos stock de este producto</div>"}	f	f	5
 \.
 
 
@@ -141275,12 +141618,24 @@ COPY public.product_template_attribute_line (id, product_tmpl_id, sequence, attr
 16	74	11	14	2	2	2	t	2026-11-25 09:34:01.199987	2026-11-25 09:34:01.199987
 17	76	10	3	3	2	2	t	2026-11-25 09:35:39.500133	2026-11-25 09:35:39.500133
 18	76	11	14	2	2	2	t	2026-11-25 09:36:10.059005	2026-11-25 09:36:10.059005
-13	77	11	13	3	2	2	t	2026-11-24 19:04:45.213708	2026-11-25 09:39:09.704904
 19	77	12	3	2	2	2	t	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
 20	78	10	3	2	2	2	t	2026-11-25 09:43:02.829609	2026-11-25 09:43:02.829609
 21	78	11	14	3	2	2	t	2026-11-25 09:43:47.222474	2026-11-25 09:43:47.222474
 22	79	10	3	2	2	2	t	2026-11-25 09:45:00.329139	2026-11-25 09:45:00.329139
 23	79	11	14	2	2	2	t	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357
+24	80	10	12	3	2	2	t	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+25	80	11	3	3	2	2	t	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+26	80	12	14	2	2	2	t	2026-11-25 10:39:33.339481	2026-11-25 10:40:51.341131
+27	81	10	3	2	2	2	t	2026-11-25 10:42:28.600759	2026-11-25 10:42:28.600759
+28	81	11	14	1	2	2	t	2026-11-25 10:42:28.600759	2026-11-25 10:42:28.600759
+29	81	12	12	3	2	2	t	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+30	82	10	3	3	2	2	t	2026-11-25 10:44:33.676138	2026-11-25 10:44:33.676138
+31	82	11	14	2	2	2	t	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+32	82	12	12	1	2	2	t	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+33	83	10	3	3	2	2	t	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+34	83	11	14	1	2	2	t	2026-11-25 10:47:23.47062	2026-11-25 10:47:23.47062
+13	77	11	13	0	2	2	f	2026-11-24 19:04:45.213708	2026-11-25 10:51:58.559337
+35	77	13	14	3	2	2	t	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
 \.
 
 
@@ -141315,19 +141670,13 @@ COPY public.product_template_attribute_value (id, product_attribute_value_id, at
 24	84	9	27	7	4	1	1	0.0	t	2026-11-17 07:59:51.022341	2026-11-17 07:59:51.022341
 25	51	10	36	3	2	2	2	0.0	t	2026-11-17 08:26:04.520893	2026-11-17 08:26:04.520893
 27	55	10	36	3	3	2	2	0.0	t	2026-11-17 08:26:04.520893	2026-11-17 08:26:04.520893
-28	102	11	36	12	2	2	2	0.0	t	2026-11-17 08:26:04.520893	2026-11-17 08:26:04.520893
 29	103	11	36	12	8	2	2	200.0	t	2026-11-17 08:26:04.520893	2026-11-17 08:26:34.127469
-31	105	13	77	13	8	2	2	1000.0	t	2026-11-24 19:04:45.213708	2026-11-24 19:05:11.463764
 39	108	15	74	3	7	2	2	0.0	t	2026-11-25 09:28:06.816961	2026-11-25 09:28:06.816961
 40	109	15	74	3	2	2	2	0.0	t	2026-11-25 09:28:06.816961	2026-11-25 09:28:06.816961
-42	111	16	74	14	10	2	2	0.0	t	2026-11-25 09:34:01.199987	2026-11-25 09:34:01.199987
-41	110	16	74	14	8	2	2	900.0	t	2026-11-25 09:34:01.199987	2026-11-25 09:34:32.59917
+68	54	27	81	3	9	2	2	50.0	t	2026-11-25 10:42:28.600759	2026-11-25 10:42:28.600759
 43	112	17	76	3	11	2	2	0.0	t	2026-11-25 09:35:39.500133	2026-11-25 09:35:39.500133
 45	114	17	76	3	2	2	2	0.0	t	2026-11-25 09:35:39.500133	2026-11-25 09:35:39.500133
-47	116	18	76	14	3	2	2	0.0	t	2026-11-25 09:36:10.059005	2026-11-25 09:36:10.059005
-46	115	18	76	14	4	2	2	300.0	t	2026-11-25 09:36:10.059005	2026-11-25 09:36:41.347804
-48	117	13	77	13	11	2	2	0.0	t	2026-11-25 09:39:09.704904	2026-11-25 09:39:09.704904
-32	104	13	77	13	11	2	2	100.0	t	2026-11-24 19:04:58.5377	2026-11-25 09:39:20.222998
+69	126	27	81	3	2	2	2	0.0	t	2026-11-25 10:42:28.600759	2026-11-25 10:42:28.600759
 49	51	19	77	3	8	2	2	0.0	t	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
 50	118	19	77	3	5	2	2	0.0	t	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
 37	106	15	74	3	3	2	2	100.0	t	2026-11-25 09:28:06.816961	2026-11-25 09:40:29.932303
@@ -141337,12 +141686,43 @@ COPY public.product_template_attribute_value (id, product_attribute_value_id, at
 51	51	20	78	3	10	2	2	0.0	t	2026-11-25 09:43:02.829609	2026-11-25 09:43:02.829609
 52	118	20	78	3	8	2	2	0.0	t	2026-11-25 09:43:02.829609	2026-11-25 09:43:02.829609
 55	120	21	78	14	1	2	2	0.0	t	2026-11-25 09:43:47.222474	2026-11-25 09:43:47.222474
-54	119	21	78	14	11	2	2	400.0	t	2026-11-25 09:43:47.222474	2026-11-25 09:44:05.86809
-53	111	21	78	14	6	2	2	1300.0	t	2026-11-25 09:43:47.222474	2026-11-25 09:44:28.143488
+70	120	28	81	14	11	2	2	0.0	t	2026-11-25 10:42:28.600759	2026-11-25 10:42:28.600759
 56	107	22	79	3	10	2	2	50.0	t	2026-11-25 09:45:00.329139	2026-11-25 09:45:00.329139
 57	114	22	79	3	8	2	2	0.0	t	2026-11-25 09:45:00.329139	2026-11-25 09:45:00.329139
 58	120	23	79	14	3	2	2	0.0	t	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357
-59	121	23	79	14	11	2	2	1500.0	t	2026-11-25 09:45:28.305357	2026-11-25 09:45:49.192696
+63	51	25	80	3	8	2	2	0.0	t	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+64	109	25	80	3	10	2	2	0.0	t	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+65	125	25	80	3	6	2	2	0.0	t	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+41	110	16	74	14	8	2	2	200.0	t	2026-11-25 09:34:01.199987	2026-11-25 10:40:17.566516
+66	110	26	80	14	5	2	2	200.0	t	2026-11-25 10:39:33.339481	2026-11-25 10:40:17.566516
+42	111	16	74	14	10	2	2	100.0	t	2026-11-25 09:34:01.199987	2026-11-25 10:40:20.038717
+53	111	21	78	14	6	2	2	100.0	t	2026-11-25 09:43:47.222474	2026-11-25 10:40:20.038717
+46	115	18	76	14	4	2	2	400.0	t	2026-11-25 09:36:10.059005	2026-11-25 10:40:21.468302
+47	116	18	76	14	3	2	2	300.0	t	2026-11-25 09:36:10.059005	2026-11-25 10:40:22.895696
+54	119	21	78	14	11	2	2	100.0	t	2026-11-25 09:43:47.222474	2026-11-25 10:40:28.908537
+59	121	23	79	14	11	2	2	600.0	t	2026-11-25 09:45:28.305357	2026-11-25 10:40:36.526368
+67	120	26	80	14	7	2	2	0.0	t	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+28	102	11	36	12	2	2	2	150.0	t	2026-11-17 08:26:04.520893	2026-11-25 10:43:32.691067
+71	102	29	81	12	7	2	2	150.0	t	2026-11-25 10:42:58.032935	2026-11-25 10:43:32.691067
+60	122	24	80	12	11	2	2	180.0	t	2026-11-25 10:37:26.801454	2026-11-25 10:43:34.375475
+61	123	24	80	12	5	2	2	170.0	t	2026-11-25 10:37:26.801454	2026-11-25 10:43:35.595558
+62	124	24	80	12	8	2	2	250.0	t	2026-11-25 10:37:26.801454	2026-11-25 10:43:37.915838
+72	127	29	81	12	9	2	2	100.0	t	2026-11-25 10:42:58.032935	2026-11-25 10:43:39.313757
+73	128	29	81	12	9	2	2	150.0	t	2026-11-25 10:42:58.032935	2026-11-25 10:43:40.734005
+74	51	30	82	3	1	2	2	0.0	t	2026-11-25 10:44:33.676138	2026-11-25 10:44:33.676138
+75	109	30	82	3	3	2	2	0.0	t	2026-11-25 10:44:33.676138	2026-11-25 10:44:33.676138
+76	129	30	82	3	5	2	2	0.0	t	2026-11-25 10:44:33.676138	2026-11-25 10:44:33.676138
+77	119	31	82	14	4	2	2	100.0	t	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+78	120	31	82	14	6	2	2	0.0	t	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+79	127	32	82	12	11	2	2	0.0	t	2026-11-25 10:46:15.808172	2026-11-25 10:46:21.491895
+80	106	33	83	3	6	2	2	100.0	t	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+81	112	33	83	3	3	2	2	0.0	t	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+82	126	33	83	3	8	2	2	0.0	t	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+83	120	34	83	14	1	2	2	0.0	t	2026-11-25 10:47:23.47062	2026-11-25 10:47:23.47062
+31	105	13	77	13	8	2	2	1000.0	f	2026-11-24 19:04:45.213708	2026-11-25 10:51:58.559337
+84	111	35	77	14	2	2	2	100.0	t	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+85	116	35	77	14	6	2	2	300.0	t	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+86	120	35	77	14	5	2	2	0.0	t	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
 \.
 
 
@@ -141455,12 +141835,6 @@ COPY public.product_value (id, product_id, lot_id, move_id, company_id, user_id,
 88	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:35:39.500133	2026-11-25 09:35:39.500133
 89	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:35:39.500133	2026-11-25 09:35:39.500133
 90	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:35:39.500133	2026-11-25 09:35:39.500133
-98	134	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-99	135	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-100	136	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-101	137	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-102	138	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
-103	139	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
 97	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:09.704904	2026-11-25 09:39:09.704904
 106	142	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:43:47.222474	2026-11-25 09:43:47.222474
 107	143	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:43:47.222474	2026-11-25 09:43:47.222474
@@ -141476,6 +141850,67 @@ COPY public.product_value (id, product_id, lot_id, move_id, company_id, user_id,
 117	153	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:45:28.305357	2026-11-25 09:45:28.305357
 112	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:45:00.329139	2026-11-25 09:45:00.329139
 113	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:45:00.329139	2026-11-25 09:45:00.329139
+118	154	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+119	155	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+120	156	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+121	157	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+122	158	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+123	159	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+124	160	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+125	161	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+126	162	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:37:26.801454	2026-11-25 10:37:26.801454
+98	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
+99	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
+100	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
+101	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
+102	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
+103	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 09:39:54.736346	2026-11-25 09:39:54.736346
+127	163	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+128	164	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+129	165	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+130	166	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+131	167	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+132	168	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+133	169	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+134	170	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+135	171	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:40:51.341131	2026-11-25 10:40:51.341131
+138	174	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+139	175	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+140	176	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+141	177	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+142	178	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+143	179	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:58.032935	2026-11-25 10:42:58.032935
+136	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:28.600759	2026-11-25 10:42:28.600759
+137	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:42:28.600759	2026-11-25 10:42:28.600759
+147	183	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+148	184	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+149	185	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+150	186	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+151	187	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+152	188	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:15.808172	2026-11-25 10:46:15.808172
+144	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:44:33.676138	2026-11-25 10:44:33.676138
+145	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:44:33.676138	2026-11-25 10:44:33.676138
+146	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:44:33.676138	2026-11-25 10:44:33.676138
+153	189	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+154	190	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+155	191	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:46:59.087764	2026-11-25 10:46:59.087764
+158	194	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+159	195	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+160	196	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+161	197	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+162	198	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+163	199	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+156	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+157	\N	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 10:51:58.559337	2026-11-25 10:51:58.559337
+164	200	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:02:40.303678	2026-11-25 11:02:40.303678
+165	201	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:04:39.560042	2026-11-25 11:04:39.560042
+166	202	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:06:04.110168	2026-11-25 11:06:04.110168
+167	203	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:07:31.029186	2026-11-25 11:07:31.029186
+168	204	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:09:32.489502	2026-11-25 11:09:32.489502
+169	205	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:09:58.775461	2026-11-25 11:09:58.775461
+170	206	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:11:43.162528	2026-11-25 11:11:43.162528
+171	207	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:13:08.814176	2026-11-25 11:13:08.814176
+172	208	\N	\N	2	2	2	2	Actualización de precio de None a 0.0 realizada por Pablo admin	0.00	0001-01-01 00:00:00	2026-11-25 11:14:07.562638	2026-11-25 11:14:07.562638
 \.
 
 
@@ -141545,18 +141980,6 @@ COPY public.product_variant_combination (product_product_id, product_template_at
 131	46
 132	45
 132	47
-134	32
-134	49
-135	32
-135	50
-136	31
-136	49
-137	31
-137	50
-138	48
-138	49
-139	48
-139	50
 142	51
 142	53
 143	51
@@ -141577,6 +142000,114 @@ COPY public.product_variant_combination (product_product_id, product_template_at
 152	58
 153	57
 153	59
+154	60
+154	63
+155	60
+155	64
+156	60
+156	65
+157	61
+157	63
+158	61
+158	64
+159	61
+159	65
+160	62
+160	63
+161	62
+161	64
+162	62
+162	65
+162	66
+161	66
+160	66
+159	66
+158	66
+157	66
+156	66
+155	66
+154	66
+163	60
+163	63
+163	67
+164	60
+164	64
+164	67
+165	60
+165	65
+165	67
+166	61
+166	63
+166	67
+167	61
+167	64
+167	67
+168	61
+168	65
+168	67
+169	62
+169	63
+169	67
+170	62
+170	64
+170	67
+171	62
+171	65
+171	67
+174	68
+174	70
+174	71
+175	68
+175	70
+175	72
+176	68
+176	70
+176	73
+177	69
+177	70
+177	71
+178	69
+178	70
+178	72
+179	69
+179	70
+179	73
+183	74
+183	77
+183	79
+184	74
+184	78
+184	79
+185	75
+185	77
+185	79
+186	75
+186	78
+186	79
+187	76
+187	77
+187	79
+188	76
+188	78
+188	79
+189	80
+190	81
+191	82
+191	83
+190	83
+189	83
+194	49
+194	84
+195	49
+195	85
+196	49
+196	86
+197	50
+197	84
+198	50
+198	85
+199	50
+199	86
 \.
 
 
@@ -144876,6 +145407,7 @@ COPY public.res_device_log (id, user_id, create_uid, write_uid, session_identifi
 9	2	\N	\N	OWYANPF33Amyp-pBNZWyv31eoXbklix7dO2FTp4d6-	windows	chrome	172.24.0.1	\N	\N	computer	f	2026-11-17 07:20:44	2026-11-24 08:22:09	\N	\N
 10	2	\N	\N	RUiU4UI-Dw2We4a1HqztsBNVONb1o7k2h2aPFx_yf8	windows	chrome	172.18.0.1	\N	\N	computer	f	2026-11-23 18:13:26	2026-11-24 18:47:38	\N	\N
 11	2	\N	\N	OWYANPF33Amyp-pBNZWyv31eoXbklix7dO2FTp4d6-	windows	chrome	172.24.0.1	\N	\N	computer	f	2026-11-17 07:20:44	2026-11-25 09:02:05	\N	\N
+12	2	\N	\N	OWYANPF33Amyp-pBNZWyv31eoXbklix7dO2FTp4d6-	windows	chrome	172.24.0.1	\N	\N	computer	f	2026-11-17 07:20:44	2026-11-25 10:35:03	\N	\N
 \.
 
 
@@ -147747,6 +148279,18 @@ COPY public.update_product_attribute_value (id, attribute_value_id, create_uid, 
 2	113	2	2	update_extra_price	2026-11-25 09:40:41.846678	2026-11-25 09:40:41.846678
 3	107	2	2	update_extra_price	2026-11-25 09:40:49.503245	2026-11-25 09:40:49.503245
 4	54	2	2	update_extra_price	2026-11-25 09:40:56.392703	2026-11-25 09:40:56.392703
+5	110	2	2	update_extra_price	2026-11-25 10:40:17.530533	2026-11-25 10:40:17.530533
+6	111	2	2	update_extra_price	2026-11-25 10:40:20.00317	2026-11-25 10:40:20.00317
+7	115	2	2	update_extra_price	2026-11-25 10:40:21.434572	2026-11-25 10:40:21.434572
+8	116	2	2	update_extra_price	2026-11-25 10:40:22.858458	2026-11-25 10:40:22.858458
+9	119	2	2	update_extra_price	2026-11-25 10:40:28.874483	2026-11-25 10:40:28.874483
+10	121	2	2	update_extra_price	2026-11-25 10:40:36.493104	2026-11-25 10:40:36.493104
+11	102	2	2	update_extra_price	2026-11-25 10:43:32.655619	2026-11-25 10:43:32.655619
+12	122	2	2	update_extra_price	2026-11-25 10:43:34.351656	2026-11-25 10:43:34.351656
+13	123	2	2	update_extra_price	2026-11-25 10:43:35.575965	2026-11-25 10:43:35.575965
+14	124	2	2	update_extra_price	2026-11-25 10:43:37.89452	2026-11-25 10:43:37.89452
+15	127	2	2	update_extra_price	2026-11-25 10:43:39.27934	2026-11-25 10:43:39.27934
+16	128	2	2	update_extra_price	2026-11-25 10:43:40.710816	2026-11-25 10:43:40.710816
 \.
 
 
@@ -148157,6 +148701,13 @@ COPY public.website_track (id, visitor_id, page_id, url, visit_datetime, product
 118	4	4	http://localhost:8069/	2026-11-25 09:08:29.608531	\N
 119	4	\N	http://localhost:8069/shop/horizonte-grv-79	2026-11-25 09:08:46.242826	\N
 120	4	\N	\N	2026-11-25 09:08:48	103
+121	4	4	http://localhost:8069/	2026-11-25 10:35:03.676481	\N
+122	4	4	http://localhost:8069/	2026-11-25 10:48:55.710273	\N
+123	4	4	http://localhost:8069/	2026-11-25 10:49:25.834275	\N
+124	4	10	http://localhost:8069/our-services	2026-11-25 10:49:49.970456	\N
+125	4	4	http://localhost:8069/	2026-11-25 11:15:13.720393	\N
+126	4	\N	http://localhost:8069/shop/accesorios-2/casco-deportivo-ventus-con-proteccion-mips-88	2026-11-25 11:15:43.581571	\N
+127	4	\N	\N	2026-11-25 11:15:46	204
 \.
 
 
@@ -148186,7 +148737,7 @@ COPY public.website_visitor (id, website_id, partner_id, country_id, lang_id, vi
 79	1	\N	\N	83	1	3	3	aad6e10c203fcd5fd7e91d60f392461a	\N	2026-11-24 07:28:51.965289	2026-11-24 07:28:51.965289	2026-11-24 07:28:51.965289
 86	1	\N	\N	83	1	3	3	777880033f38b4c37fdd9ae965fe1b20	\N	2026-11-24 07:49:49.157882	2026-11-24 07:54:42.845765	2026-11-24 07:49:49.157882
 91	1	\N	\N	83	1	8	8	5ac7d23882612b648980b49d8b9686d2	\N	2026-11-24 07:55:23.398317	2026-11-24 08:10:34.141069	2026-11-24 07:55:23.398317
-4	1	3	\N	83	5	2	2	3	Europe/Madrid	2026-11-20 12:40:42.60218	2026-11-25 09:08:48.92472	2026-11-20 12:40:42.60218
+4	1	3	\N	83	5	2	2	3	Europe/Madrid	2026-11-20 12:40:42.60218	2026-11-25 11:15:46.147623	2026-11-20 12:40:42.60218
 \.
 
 
@@ -148748,7 +149299,7 @@ SELECT pg_catalog.setval('public.bill_to_po_wizard_id_seq', 1, false);
 -- Name: bus_bus_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.bus_bus_id_seq', 157, true);
+SELECT pg_catalog.setval('public.bus_bus_id_seq', 161, true);
 
 
 --
@@ -149000,7 +149551,7 @@ SELECT pg_catalog.setval('public.ir_cron_id_seq', 33, true);
 -- Name: ir_cron_progress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_cron_progress_id_seq', 194, true);
+SELECT pg_catalog.setval('public.ir_cron_progress_id_seq', 237, true);
 
 
 --
@@ -149574,7 +150125,7 @@ SELECT pg_catalog.setval('public.mail_followers_edit_id_seq', 1, false);
 -- Name: mail_followers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.mail_followers_id_seq', 176, true);
+SELECT pg_catalog.setval('public.mail_followers_id_seq', 240, true);
 
 
 --
@@ -149616,7 +150167,7 @@ SELECT pg_catalog.setval('public.mail_mail_id_seq', 20, true);
 -- Name: mail_message_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.mail_message_id_seq', 1081, true);
+SELECT pg_catalog.setval('public.mail_message_id_seq', 1147, true);
 
 
 --
@@ -149714,7 +150265,7 @@ SELECT pg_catalog.setval('public.mail_template_reset_id_seq', 1, false);
 -- Name: mail_tracking_value_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.mail_tracking_value_id_seq', 349, true);
+SELECT pg_catalog.setval('public.mail_tracking_value_id_seq', 351, true);
 
 
 --
@@ -149756,7 +150307,7 @@ SELECT pg_catalog.setval('public.orm_signaling_assets_id_seq', 10, true);
 -- Name: orm_signaling_default_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_default_id_seq', 112, true);
+SELECT pg_catalog.setval('public.orm_signaling_default_id_seq', 131, true);
 
 
 --
@@ -150064,14 +150615,14 @@ SELECT pg_catalog.setval('public.product_attribute_custom_value_id_seq', 1, fals
 -- Name: product_attribute_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_attribute_id_seq', 14, true);
+SELECT pg_catalog.setval('public.product_attribute_id_seq', 15, true);
 
 
 --
 -- Name: product_attribute_value_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_attribute_value_id_seq', 121, true);
+SELECT pg_catalog.setval('public.product_attribute_value_id_seq', 129, true);
 
 
 --
@@ -150141,14 +150692,14 @@ SELECT pg_catalog.setval('public.product_pricelist_item_id_seq', 1, true);
 -- Name: product_product_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_product_id_seq', 153, true);
+SELECT pg_catalog.setval('public.product_product_id_seq', 208, true);
 
 
 --
 -- Name: product_public_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_public_category_id_seq', 20, true);
+SELECT pg_catalog.setval('public.product_public_category_id_seq', 27, true);
 
 
 --
@@ -150176,7 +150727,7 @@ SELECT pg_catalog.setval('public.product_ribbon_id_seq', 4, true);
 -- Name: product_supplierinfo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_supplierinfo_id_seq', 41, true);
+SELECT pg_catalog.setval('public.product_supplierinfo_id_seq', 50, true);
 
 
 --
@@ -150197,21 +150748,21 @@ SELECT pg_catalog.setval('public.product_template_attribute_exclusion_id_seq', 3
 -- Name: product_template_attribute_line_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_template_attribute_line_id_seq', 23, true);
+SELECT pg_catalog.setval('public.product_template_attribute_line_id_seq', 35, true);
 
 
 --
 -- Name: product_template_attribute_value_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_template_attribute_value_id_seq', 59, true);
+SELECT pg_catalog.setval('public.product_template_attribute_value_id_seq', 86, true);
 
 
 --
 -- Name: product_template_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_template_id_seq', 83, true);
+SELECT pg_catalog.setval('public.product_template_id_seq', 92, true);
 
 
 --
@@ -150225,7 +150776,7 @@ SELECT pg_catalog.setval('public.product_uom_id_seq', 1, false);
 -- Name: product_value_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.product_value_id_seq', 117, true);
+SELECT pg_catalog.setval('public.product_value_id_seq', 172, true);
 
 
 --
@@ -150365,7 +150916,7 @@ SELECT pg_catalog.setval('public.res_currency_rate_id_seq', 163, true);
 -- Name: res_device_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_device_log_id_seq', 11, true);
+SELECT pg_catalog.setval('public.res_device_log_id_seq', 12, true);
 
 
 --
@@ -150995,7 +151546,7 @@ SELECT pg_catalog.setval('public.uom_uom_id_seq', 30, true);
 -- Name: update_product_attribute_value_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.update_product_attribute_value_id_seq', 4, true);
+SELECT pg_catalog.setval('public.update_product_attribute_value_id_seq', 16, true);
 
 
 --
@@ -151163,14 +151714,14 @@ SELECT pg_catalog.setval('public.website_snippet_filter_id_seq', 7, true);
 -- Name: website_track_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.website_track_id_seq', 120, true);
+SELECT pg_catalog.setval('public.website_track_id_seq', 127, true);
 
 
 --
 -- Name: website_visitor_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.website_visitor_id_seq', 127, true);
+SELECT pg_catalog.setval('public.website_visitor_id_seq', 135, true);
 
 
 --
@@ -181046,5 +181597,5 @@ ALTER TABLE ONLY public.wizard_ir_model_menu_create
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 2g3FLYzpfqTBp7heZIQVdJ6bX1nHX8xJ9aTkBK02SYOigCDbCCgpCha6JQll6mG
+\unrestrict 0e2FqdNsKRz6HagBO0PfQzYEtHKZZKS47SPwWiM1c0SNDDoPa6JEL4ix6mukcd3
 
